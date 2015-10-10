@@ -44,6 +44,9 @@
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="jV1-zj-Fju" firstAttribute="centerX" secondItem="dcN-NI-7rE" secondAttribute="centerX" id="fXK-Ie-UFv"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-qt-F0A">
                                         <rect key="frame" x="0.0" y="132" width="560" height="132"/>
@@ -69,6 +72,9 @@
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="qye-8A-qe4" firstAttribute="centerX" secondItem="QhO-qt-F0A" secondAttribute="centerX" id="jNF-va-dZe"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoV-W5-6b8">
                                         <rect key="frame" x="0.0" y="263" width="560" height="132"/>
@@ -94,6 +100,9 @@
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="JEk-uy-mF6" firstAttribute="centerX" secondItem="FoV-W5-6b8" secondAttribute="centerX" id="zre-h3-y3y"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3F-0q-CfK">
                                         <rect key="frame" x="0.0" y="395" width="560" height="132"/>
@@ -119,6 +128,9 @@
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="AZO-Ao-cWD" firstAttribute="centerX" secondItem="b3F-0q-CfK" secondAttribute="centerX" id="rM8-xu-5gt"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <animations/>
