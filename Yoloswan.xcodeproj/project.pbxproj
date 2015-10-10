@@ -14,6 +14,7 @@
 		2C791FC31BC947350085633D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C791FC11BC947350085633D /* LaunchScreen.storyboard */; };
 		2C791FCE1BC947350085633D /* YoloswanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FCD1BC947350085633D /* YoloswanTests.swift */; };
 		2C791FD91BC947350085633D /* YoloswanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FD81BC947350085633D /* YoloswanUITests.swift */; };
+		5801105A1BC9914F00ECF194 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 580110591BC9914F00ECF194 /* iCarousel.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		2C791FD41BC947350085633D /* YoloswanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoloswanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C791FD81BC947350085633D /* YoloswanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloswanUITests.swift; sourceTree = "<group>"; };
 		2C791FDA1BC947350085633D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580110571BC9914E00ECF194 /* Yoloswan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yoloswan-Bridging-Header.h"; sourceTree = "<group>"; };
+		580110581BC9914F00ECF194 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		580110591BC9914F00ECF194 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,9 @@
 				2C791FBF1BC947350085633D /* Assets.xcassets */,
 				2C791FC11BC947350085633D /* LaunchScreen.storyboard */,
 				2C791FC41BC947350085633D /* Info.plist */,
+				580110581BC9914F00ECF194 /* iCarousel.h */,
+				580110591BC9914F00ECF194 /* iCarousel.m */,
+				580110571BC9914E00ECF194 /* Yoloswan-Bridging-Header.h */,
 			);
 			path = Yoloswan;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 		2C791FAD1BC947330085633D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Alejandro Viquez";
 				TargetAttributes = {
@@ -255,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5801105A1BC9914F00ECF194 /* iCarousel.m in Sources */,
 				2C791FBB1BC947340085633D /* ViewController.swift in Sources */,
 				2C791FB91BC947340085633D /* AppDelegate.swift in Sources */,
 			);
@@ -396,11 +405,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Yoloswan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.Yoloswan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yoloswan/Yoloswan-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,11 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Yoloswan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.Yoloswan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yoloswan/Yoloswan-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -483,6 +497,7 @@
 				2C791FDF1BC947350085633D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C791FE01BC947350085633D /* Build configuration list for PBXNativeTarget "YoloswanTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +506,7 @@
 				2C791FE21BC947350085633D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C791FE31BC947350085633D /* Build configuration list for PBXNativeTarget "YoloswanUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +515,7 @@
 				2C791FE51BC947350085633D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
