@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C791FB91BC947340085633D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FB81BC947340085633D /* AppDelegate.swift */; };
+		2C791FBB1BC947340085633D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FBA1BC947340085633D /* ViewController.swift */; };
+		2C791FBE1BC947350085633D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C791FBC1BC947350085633D /* Main.storyboard */; };
+		2C791FC01BC947350085633D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C791FBF1BC947350085633D /* Assets.xcassets */; };
+		2C791FC31BC947350085633D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C791FC11BC947350085633D /* LaunchScreen.storyboard */; };
+		2C791FCE1BC947350085633D /* YoloswanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FCD1BC947350085633D /* YoloswanTests.swift */; };
+		2C791FD91BC947350085633D /* YoloswanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FD81BC947350085633D /* YoloswanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C791FCA1BC947350085633D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C791FAD1BC947330085633D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C791FB41BC947340085633D;
+			remoteInfo = Yoloswan;
+		};
+		2C791FD51BC947350085633D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C791FAD1BC947330085633D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C791FB41BC947340085633D;
+			remoteInfo = Yoloswan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C791FB51BC947340085633D /* Yoloswan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yoloswan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C791FB81BC947340085633D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C791FBA1BC947340085633D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C791FBD1BC947350085633D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C791FBF1BC947350085633D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C791FC21BC947350085633D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C791FC41BC947350085633D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C791FC91BC947350085633D /* YoloswanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoloswanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C791FCD1BC947350085633D /* YoloswanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloswanTests.swift; sourceTree = "<group>"; };
+		2C791FCF1BC947350085633D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C791FD41BC947350085633D /* YoloswanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoloswanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C791FD81BC947350085633D /* YoloswanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloswanUITests.swift; sourceTree = "<group>"; };
+		2C791FDA1BC947350085633D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C791FB21BC947340085633D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C791FC61BC947350085633D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C791FD11BC947350085633D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C791FAC1BC947330085633D = {
+			isa = PBXGroup;
+			children = (
+				2C791FB71BC947340085633D /* Yoloswan */,
+				2C791FCC1BC947350085633D /* YoloswanTests */,
+				2C791FD71BC947350085633D /* YoloswanUITests */,
+				2C791FB61BC947340085633D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C791FB61BC947340085633D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C791FB51BC947340085633D /* Yoloswan.app */,
+				2C791FC91BC947350085633D /* YoloswanTests.xctest */,
+				2C791FD41BC947350085633D /* YoloswanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C791FB71BC947340085633D /* Yoloswan */ = {
+			isa = PBXGroup;
+			children = (
+				2C791FB81BC947340085633D /* AppDelegate.swift */,
+				2C791FBA1BC947340085633D /* ViewController.swift */,
+				2C791FBC1BC947350085633D /* Main.storyboard */,
+				2C791FBF1BC947350085633D /* Assets.xcassets */,
+				2C791FC11BC947350085633D /* LaunchScreen.storyboard */,
+				2C791FC41BC947350085633D /* Info.plist */,
+			);
+			path = Yoloswan;
+			sourceTree = "<group>";
+		};
+		2C791FCC1BC947350085633D /* YoloswanTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C791FCD1BC947350085633D /* YoloswanTests.swift */,
+				2C791FCF1BC947350085633D /* Info.plist */,
+			);
+			path = YoloswanTests;
+			sourceTree = "<group>";
+		};
+		2C791FD71BC947350085633D /* YoloswanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C791FD81BC947350085633D /* YoloswanUITests.swift */,
+				2C791FDA1BC947350085633D /* Info.plist */,
+			);
+			path = YoloswanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C791FB41BC947340085633D /* Yoloswan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C791FDD1BC947350085633D /* Build configuration list for PBXNativeTarget "Yoloswan" */;
+			buildPhases = (
+				2C791FB11BC947340085633D /* Sources */,
+				2C791FB21BC947340085633D /* Frameworks */,
+				2C791FB31BC947340085633D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yoloswan;
+			productName = Yoloswan;
+			productReference = 2C791FB51BC947340085633D /* Yoloswan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C791FC81BC947350085633D /* YoloswanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C791FE01BC947350085633D /* Build configuration list for PBXNativeTarget "YoloswanTests" */;
+			buildPhases = (
+				2C791FC51BC947350085633D /* Sources */,
+				2C791FC61BC947350085633D /* Frameworks */,
+				2C791FC71BC947350085633D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C791FCB1BC947350085633D /* PBXTargetDependency */,
+			);
+			name = YoloswanTests;
+			productName = YoloswanTests;
+			productReference = 2C791FC91BC947350085633D /* YoloswanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C791FD31BC947350085633D /* YoloswanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C791FE31BC947350085633D /* Build configuration list for PBXNativeTarget "YoloswanUITests" */;
+			buildPhases = (
+				2C791FD01BC947350085633D /* Sources */,
+				2C791FD11BC947350085633D /* Frameworks */,
+				2C791FD21BC947350085633D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C791FD61BC947350085633D /* PBXTargetDependency */,
+			);
+			name = YoloswanUITests;
+			productName = YoloswanUITests;
+			productReference = 2C791FD41BC947350085633D /* YoloswanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C791FAD1BC947330085633D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alejandro Viquez";
+				TargetAttributes = {
+					2C791FB41BC947340085633D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					2C791FC81BC947350085633D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 2C791FB41BC947340085633D;
+					};
+					2C791FD31BC947350085633D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 2C791FB41BC947340085633D;
+					};
+				};
+			};
+			buildConfigurationList = 2C791FB01BC947330085633D /* Build configuration list for PBXProject "Yoloswan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C791FAC1BC947330085633D;
+			productRefGroup = 2C791FB61BC947340085633D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C791FB41BC947340085633D /* Yoloswan */,
+				2C791FC81BC947350085633D /* YoloswanTests */,
+				2C791FD31BC947350085633D /* YoloswanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C791FB31BC947340085633D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C791FC31BC947350085633D /* LaunchScreen.storyboard in Resources */,
+				2C791FC01BC947350085633D /* Assets.xcassets in Resources */,
+				2C791FBE1BC947350085633D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C791FC71BC947350085633D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C791FD21BC947350085633D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C791FB11BC947340085633D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C791FBB1BC947340085633D /* ViewController.swift in Sources */,
+				2C791FB91BC947340085633D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C791FC51BC947350085633D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C791FCE1BC947350085633D /* YoloswanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C791FD01BC947350085633D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C791FD91BC947350085633D /* YoloswanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C791FCB1BC947350085633D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C791FB41BC947340085633D /* Yoloswan */;
+			targetProxy = 2C791FCA1BC947350085633D /* PBXContainerItemProxy */;
+		};
+		2C791FD61BC947350085633D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C791FB41BC947340085633D /* Yoloswan */;
+			targetProxy = 2C791FD51BC947350085633D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C791FBC1BC947350085633D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C791FBD1BC947350085633D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C791FC11BC947350085633D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C791FC21BC947350085633D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C791FDB1BC947350085633D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C791FDC1BC947350085633D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C791FDE1BC947350085633D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yoloswan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.Yoloswan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C791FDF1BC947350085633D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yoloswan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.Yoloswan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2C791FE11BC947350085633D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YoloswanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.YoloswanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoloswan.app/Yoloswan";
+			};
+			name = Debug;
+		};
+		2C791FE21BC947350085633D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YoloswanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.YoloswanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoloswan.app/Yoloswan";
+			};
+			name = Release;
+		};
+		2C791FE41BC947350085633D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YoloswanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.YoloswanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Yoloswan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2C791FE51BC947350085633D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YoloswanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.YoloswanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Yoloswan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C791FB01BC947330085633D /* Build configuration list for PBXProject "Yoloswan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C791FDB1BC947350085633D /* Debug */,
+				2C791FDC1BC947350085633D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C791FDD1BC947350085633D /* Build configuration list for PBXNativeTarget "Yoloswan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C791FDE1BC947350085633D /* Debug */,
+				2C791FDF1BC947350085633D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C791FE01BC947350085633D /* Build configuration list for PBXNativeTarget "YoloswanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C791FE11BC947350085633D /* Debug */,
+				2C791FE21BC947350085633D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C791FE31BC947350085633D /* Build configuration list for PBXNativeTarget "YoloswanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C791FE41BC947350085633D /* Debug */,
+				2C791FE51BC947350085633D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C791FAD1BC947330085633D /* Project object */;
+}
