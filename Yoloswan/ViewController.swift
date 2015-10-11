@@ -18,12 +18,16 @@ iCarouselDataSource , iCarouselDelegate{
     @IBOutlet weak var Carousel4: iCarousel!
     
     @IBOutlet weak var backGround: UIView!
-    
+    var AuxiliarInt: Int = 0
     
     
     var items2: [String] = ["frecuente1.png","frecuente2.png","frecuente3.png","frecuente4.png","frecuente5.png"]
     var items3: [String] = ["Mamá","Papá"," Hijo","Sobrino","Primo"]
     var items4: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
+    
+    var items5: [String] = ["felicita1.png","felicita1.png","felicita1.png","felicita1.png","felicita1.png"]
+    var items6: [String] = ["lugar1.png","lugar2.png","lugar3.png","lugar1.png","lugar2.png"]
+    var items7: [String] = ["cercano1.png","cercano2.png","cercano3.png","cercano4.png","cercano5.png"]
     
     var items: [Int] = []
     
@@ -89,27 +93,23 @@ iCarouselDataSource , iCarouselDelegate{
             itemView.layer.cornerRadius = itemView.frame.size.height/3
             itemView.clipsToBounds = true
             print("Holo")
-            
-            
             itemView.contentMode = .Top
-            if(Carousel2.tag == 0){
+            if(Carousel2.tag == 1){
             itemView.image = UIImage(named: "\(items2[index])")
-            }
-            if(Carousel1.tag == 1){
-                itemView.image = UIImage(named: "\(items2[index])")
-            }
             
+            }
             if(Carousel1.tag == 2){
-                itemView.image = UIImage(named: "\(items2[index])")
+                itemView.image = UIImage(named: "\(items5[index])")
             }
             
-            if(Carousel1.tag == 3){
-                itemView.image = UIImage(named: "\(items2[index])")
+            if(Carousel3.tag == 3){
+                itemView.image = UIImage(named: "\(items6[index])")
             }
-            if(Carousel1.tag == 4){
-                itemView.image = UIImage(named: "\(items2[index])")
-                
+            
+            if(Carousel4.tag == 4){
+                itemView.image = UIImage(named: "\(items7[index])")
             }
+            
             itemView.contentMode = UIViewContentMode.ScaleAspectFit
             label = UILabel(frame:itemView.bounds)
             label.textColor = UIColor(white: 1, alpha: 0.1)
@@ -136,14 +136,32 @@ iCarouselDataSource , iCarouselDelegate{
     func carousel(carousel: iCarousel, valueForOption option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
         if (option == .Spacing)
         {
-            return value * 1.4
+            return value * 3
         }
         return value
     }
 
     
     func carousel(carousel: iCarousel, didSelectItemAtIndex index: Int) {
+        if(Carousel2.tag == 1){
+            //itemView.image = UIImage(named: "\(items2[index])")
+            AuxiliarInt = 1
+            
+        }
+        if(Carousel1.tag == 2){
+            //itemView.image = UIImage(named: "\(items5[index])")
+            AuxiliarInt = 2
+        }
         
+        if(Carousel3.tag == 3){
+            //itemView.image = UIImage(named: "\(items6[index])")
+            AuxiliarInt = 3
+        }
+        
+        if(Carousel4.tag == 4){
+            AuxiliarInt = 1
+            //itemView.image = UIImage(named: "\(items7[index])")
+        }
         var numero: String = items4[index]
         //self .performSegueWithIdentifier("imageDisplaySegue", sender: nil)
             print("Se ha presionado un telefono")
@@ -155,6 +173,10 @@ iCarouselDataSource , iCarouselDelegate{
     
     }
     
+    override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
+        print("holooooo")
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
