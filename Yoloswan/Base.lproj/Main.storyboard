@@ -176,6 +176,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eD3-9G-GK1">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="605"/>
+                                <animations/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mrg-EI-9JB">
                                 <rect key="frame" x="20" y="64" width="560" height="536"/>
                                 <subviews>
@@ -186,61 +190,70 @@
                                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="KVT-Ru-ZPr">
                                         <rect key="frame" x="0.0" y="268" width="560" height="268"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Establecimiento: Hotel 5 Estrellas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4t-7i-Lxm">
-                                                <rect key="frame" x="214" y="54" width="346" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel 5 Estrellas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A4t-7i-Lxm">
+                                                <rect key="frame" x="184" y="49" width="359" height="23"/>
                                                 <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="MMk-Ol-eHh"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección: fuck fuck fuck fuck fuck fuck fuck fuckf uck fuck fuck" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gW-P4-JM3">
-                                                <rect key="frame" x="214" y="112" width="346" height="79"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="79" id="70w-pa-VDB"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lugar1" translatesAutoresizingMaskIntoConstraints="NO" id="l9b-0D-Xg8">
-                                                <rect key="frame" x="0.0" y="45" width="177" height="177"/>
+                                                <rect key="frame" x="6" y="34" width="162" height="161"/>
                                                 <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="162" id="I2H-nY-L62"/>
+                                                    <constraint firstAttribute="height" constant="161" id="ghg-f2-D7V"/>
+                                                </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección: fuck fuck fuck fuck fuck fuck fuck fuckf uck fuck fuck" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3gW-P4-JM3">
+                                                <rect key="frame" x="184" y="87" width="359" height="76"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="76" id="dIl-Zy-05r"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="l9b-0D-Xg8" firstAttribute="top" secondItem="KVT-Ru-ZPr" secondAttribute="top" constant="45" id="9XN-Xb-vlm"/>
-                                            <constraint firstItem="A4t-7i-Lxm" firstAttribute="leading" secondItem="l9b-0D-Xg8" secondAttribute="trailing" constant="37" id="Z64-gh-Gk1"/>
-                                            <constraint firstItem="3gW-P4-JM3" firstAttribute="top" secondItem="A4t-7i-Lxm" secondAttribute="bottom" constant="8" id="bFb-st-yZw"/>
-                                            <constraint firstItem="A4t-7i-Lxm" firstAttribute="top" secondItem="KVT-Ru-ZPr" secondAttribute="top" constant="54" id="bIc-sh-qPq"/>
-                                            <constraint firstAttribute="bottom" secondItem="l9b-0D-Xg8" secondAttribute="bottom" constant="46" id="bqh-k8-0kn"/>
-                                            <constraint firstItem="3gW-P4-JM3" firstAttribute="leading" secondItem="l9b-0D-Xg8" secondAttribute="trailing" constant="37" id="wYT-gQ-JzX"/>
-                                            <constraint firstAttribute="trailing" secondItem="l9b-0D-Xg8" secondAttribute="trailing" constant="383" id="zEe-FX-Ipd"/>
+                                            <constraint firstAttribute="trailing" secondItem="3gW-P4-JM3" secondAttribute="trailing" constant="17" id="Co9-0r-snR"/>
+                                            <constraint firstAttribute="trailing" secondItem="A4t-7i-Lxm" secondAttribute="trailing" constant="17" id="JR9-f3-au8"/>
+                                            <constraint firstItem="A4t-7i-Lxm" firstAttribute="leading" secondItem="l9b-0D-Xg8" secondAttribute="trailing" constant="16" id="NhP-Hc-mVS"/>
+                                            <constraint firstItem="l9b-0D-Xg8" firstAttribute="top" secondItem="KVT-Ru-ZPr" secondAttribute="top" constant="34" id="OdE-Y7-aaq"/>
+                                            <constraint firstItem="3gW-P4-JM3" firstAttribute="top" secondItem="A4t-7i-Lxm" secondAttribute="bottom" constant="15" id="Xgn-QN-Msq"/>
+                                            <constraint firstItem="3gW-P4-JM3" firstAttribute="leading" secondItem="l9b-0D-Xg8" secondAttribute="trailing" constant="16" id="vBS-tq-bEZ"/>
+                                            <constraint firstItem="l9b-0D-Xg8" firstAttribute="leading" secondItem="KVT-Ru-ZPr" secondAttribute="leading" constant="6" id="yAC-zd-0g4"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstItem="qmK-vS-1QT" firstAttribute="top" secondItem="mrg-EI-9JB" secondAttribute="top" id="8fL-ht-U16"/>
+                                    <constraint firstItem="KVT-Ru-ZPr" firstAttribute="top" secondItem="qmK-vS-1QT" secondAttribute="bottom" id="I2l-Sl-NCn"/>
+                                    <constraint firstAttribute="trailing" secondItem="qmK-vS-1QT" secondAttribute="trailing" id="cTQ-Lj-74i"/>
+                                    <constraint firstItem="qmK-vS-1QT" firstAttribute="leading" secondItem="mrg-EI-9JB" secondAttribute="leading" id="cu1-x0-6el"/>
+                                    <constraint firstItem="A4t-7i-Lxm" firstAttribute="top" secondItem="qmK-vS-1QT" secondAttribute="bottom" constant="49" id="hmt-BJ-QrR"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eD3-9G-GK1" firstAttribute="top" secondItem="Dbl-MD-Plf" secondAttribute="topMargin" constant="-5" id="1Da-gT-MR1"/>
                             <constraint firstItem="6eX-go-rIF" firstAttribute="top" secondItem="mrg-EI-9JB" secondAttribute="bottom" id="6IZ-12-5KF"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="l9b-0D-Xg8" secondAttribute="leading" id="CoI-o2-VzM"/>
+                            <constraint firstItem="eD3-9G-GK1" firstAttribute="bottom" secondItem="6eX-go-rIF" secondAttribute="top" id="9MN-BL-gw4"/>
                             <constraint firstItem="mrg-EI-9JB" firstAttribute="top" secondItem="Dbl-MD-Plf" secondAttribute="topMargin" constant="40" id="IJJ-uL-gyu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="A4t-7i-Lxm" secondAttribute="trailing" id="PpB-cu-fB1"/>
+                            <constraint firstItem="eD3-9G-GK1" firstAttribute="centerX" secondItem="mrg-EI-9JB" secondAttribute="centerX" id="NYf-5O-kMW"/>
+                            <constraint firstItem="eD3-9G-GK1" firstAttribute="leading" secondItem="Dbl-MD-Plf" secondAttribute="leading" id="PwU-kH-ICa"/>
                             <constraint firstItem="mrg-EI-9JB" firstAttribute="top" secondItem="gJQ-C8-yTe" secondAttribute="bottom" id="gu2-p1-tdH"/>
                             <constraint firstItem="mrg-EI-9JB" firstAttribute="leading" secondItem="Dbl-MD-Plf" secondAttribute="leadingMargin" id="kJ6-GY-dKe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mrg-EI-9JB" secondAttribute="trailing" id="l30-Kj-mLH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3gW-P4-JM3" secondAttribute="trailing" id="phF-zn-fJN"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="back" destination="eD3-9G-GK1" id="cpx-Wq-gH4"/>
                         <outlet property="mapView" destination="qmK-vS-1QT" id="Sqi-aB-cet"/>
                     </connections>
                 </viewController>

@@ -17,6 +17,7 @@ class MapController: UIViewController {
 
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var back: UIImageView!
     
     
     let initialLocation = CLLocationCoordinate2D(latitude: 20.65, longitude: -103.38)
@@ -37,7 +38,7 @@ class MapController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.back.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
 
         print("hola")
         print(intA)
