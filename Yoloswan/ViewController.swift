@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,
-iCarouselDataSource , iCarouselDelegate {
+class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate {
    
     
     @IBOutlet weak var Carousel2: iCarousel!
@@ -31,7 +30,12 @@ iCarouselDataSource , iCarouselDelegate {
     
     var items: [Int] = []
     
-    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+        
+        
+    }
     
     override func awakeFromNib()
     {
@@ -48,19 +52,20 @@ iCarouselDataSource , iCarouselDelegate {
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background2.png")!)
         self.view.contentMode = .ScaleAspectFit
-        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController?.hidesBarsOnSwipe = true
         Carousel2.tag = 1
         Carousel1.tag = 2
         Carousel3.tag = 3
         Carousel4.tag = 4
-        Carousel2.type = .CoverFlow
-        Carousel1.type = .CoverFlow
-        Carousel3.type = .CoverFlow
-        Carousel4.type = .CoverFlow
+        Carousel2.type = .Linear
+        Carousel1.type = .Linear
+        Carousel3.type = .Linear
+        Carousel4.type = .Linear
         
         Carousel1.dataSource = self
         Carousel1.delegate = self
-       Carousel2.dataSource = self
+        Carousel2.dataSource = self
         Carousel2.delegate = self
         Carousel3.dataSource = self
         Carousel4.dataSource = self
@@ -77,7 +82,7 @@ iCarouselDataSource , iCarouselDelegate {
             let Random: MapController = segue.destinationViewController as! MapController
             Random.intA = AuxiliarInt
         }
-    
+    }
     
     func numberOfItemsInCarousel(carousel: iCarousel) -> Int {
         return items.count
@@ -140,35 +145,39 @@ iCarouselDataSource , iCarouselDelegate {
         return itemView
         
     }
+        
     func carousel(carousel: iCarousel, valueForOption option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
         if (option == .Spacing)
         {
-            return value * 3
+            return value * 1.3
         }
         return value
     }
 
     
     func carousel(carousel: iCarousel, didSelectItemAtIndex index: Int) {
-        if(Carousel2.tag == 1){
+       
+        
+        
+        if(carousel.tag == 1){
             //itemView.image = UIImage(named: "\(items2[index])")
             AuxiliarInt = 1
             self.performSegueWithIdentifier("segueMap", sender: nil)
             
         }
-        if(Carousel1.tag == 2){
+        if(carousel.tag == 2){
             //itemView.image = UIImage(named: "\(items5[index])")
             AuxiliarInt = 2
             self.performSegueWithIdentifier("segueMap", sender: nil)
         }
         
-        if(Carousel3.tag == 3){
+        if(carousel.tag == 3){
             //itemView.image = UIImage(named: "\(items6[index])")
             AuxiliarInt = 3
             self.performSegueWithIdentifier("segueMap", sender: nil)
         }
         
-        if(Carousel4.tag == 4){
+        if(carousel.tag == 4){
             AuxiliarInt = 4
             self.performSegueWithIdentifier("segueMap", sender: nil)
             //itemView.image = UIImage(named: "\(items7[index])")
@@ -185,12 +194,7 @@ iCarouselDataSource , iCarouselDelegate {
     
     
     
-    func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
-        
-    }
+    
 
 
 }
