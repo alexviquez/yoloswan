@@ -54,7 +54,7 @@
 		580110571BC9914E00ECF194 /* Yoloswan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yoloswan-Bridging-Header.h"; sourceTree = "<group>"; };
 		580110581BC9914F00ECF194 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		580110591BC9914F00ECF194 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		58E5AD9C1BCA438F00F332E3 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapController.swift; path = Yoloswan/MapController.swift; sourceTree = "<group>"; };
+		58E5AD9C1BCA438F00F332E3 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,6 @@
 		2C791FAC1BC947330085633D = {
 			isa = PBXGroup;
 			children = (
-				58E5AD9C1BCA438F00F332E3 /* MapController.swift */,
 				2C997A281BCA018B004F04FA /* QuartzCore.framework */,
 				2C791FB71BC947340085633D /* Yoloswan */,
 				2C791FCC1BC947350085633D /* YoloswanTests */,
@@ -108,6 +107,7 @@
 		2C791FB71BC947340085633D /* Yoloswan */ = {
 			isa = PBXGroup;
 			children = (
+				58E5AD9C1BCA438F00F332E3 /* MapController.swift */,
 				2C791FB81BC947340085633D /* AppDelegate.swift */,
 				2C791FBA1BC947340085633D /* ViewController.swift */,
 				2C791FBC1BC947350085633D /* Main.storyboard */,

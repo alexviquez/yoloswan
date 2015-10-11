@@ -21,6 +21,7 @@ iCarouselDataSource , iCarouselDelegate {
     var AuxiliarInt: Int = 0
     
     
+<<<<<<< HEAD
     var items2: [String] = ["frecuente1.png","frecuente2.png","frecuente3.png","frecuente4.png","frecuente5.png"]
     var items3: [String] = ["Mamá","Papá"," Hijo","Sobrino","Primo"]
     var items4: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
@@ -30,9 +31,25 @@ iCarouselDataSource , iCarouselDelegate {
     var items7: [String] = ["cercano1.png","cercano2.png","cercano3.png","cercano4.png","cercano5.png"]
     
     var items: [Int] = []
+=======
+    var imagenes1: [String] = ["frecuente1.png","frecuente2.png","frecuente3.png","frecuente4.png","frecuente5.png"]
+    var imagenes2: [String] = ["felicita1.png","felicita2.png","felicita3.png","felicita4.png","felicita5.png"]
+    var imagenes3: [String] = ["lugar1.png","lugar2.png","lugar3.png","lugar1.png","lugar2.png"]
+    var imagenes4: [String] = ["cercano1.png","cercano2.png","cercano3.png","cercano4.png","cercano5.png"]
+   
+    var nombres1: [String] = ["Claudia","Jennifer","Diego","Mauricio","Alexa"]
+    var nombres2: [String] = ["Sofía","Ana"," Mamá","Karla","Juan"]
+    var nombres3: [String] = ["Inn Fiesta","Ibis Hotel","Tacos","Inn Fiesta","Ibis Hotel"]
+    var nombres4: [String] = ["Laura","Pablo","Sara","Paulina","Alfonso"]
+>>>>>>> origin/master
+    
+    var telefonos1: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
+    var telefonos2: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
+    var telefonos3: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
+    var telefonos4: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
     
     
-    
+    var items: [Int] = []
     override func awakeFromNib()
     {
         super.awakeFromNib()
@@ -40,7 +57,6 @@ iCarouselDataSource , iCarouselDelegate {
         {
             items.append(i)
         }
-        
     }
 
     override func viewDidLoad() {
@@ -60,7 +76,7 @@ iCarouselDataSource , iCarouselDelegate {
         
         Carousel1.dataSource = self
         Carousel1.delegate = self
-       Carousel2.dataSource = self
+        Carousel2.dataSource = self
         Carousel2.delegate = self
         Carousel3.dataSource = self
         Carousel4.dataSource = self
@@ -80,8 +96,9 @@ iCarouselDataSource , iCarouselDelegate {
     
     
     func numberOfItemsInCarousel(carousel: iCarousel) -> Int {
-        return items.count
+    return items.count
     }
+    
     
     func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView {
         var label: UILabel
@@ -99,13 +116,22 @@ iCarouselDataSource , iCarouselDelegate {
             itemView.layer.cornerRadius = 15
             itemView.layer.cornerRadius = itemView.frame.size.height/3
             itemView.clipsToBounds = true
+            label = UILabel(frame:itemView.bounds)
             print("Holo")
+<<<<<<< HEAD
             itemView.contentMode = .Top
             if(carousel.tag == 1){
             itemView.image = UIImage(named: "\(items2[index])")
+=======
+>>>>>>> origin/master
             
+            
+            if(carousel.tag == 1){
+                itemView.image = UIImage(named: "\(imagenes1[index])")
+                label.text = "\(nombres1[index])"
             }
             if(carousel.tag == 2){
+<<<<<<< HEAD
                 itemView.image = UIImage(named: "\(items5[index])")
             }
             
@@ -115,10 +141,25 @@ iCarouselDataSource , iCarouselDelegate {
             
             if(carousel.tag == 4){
                 itemView.image = UIImage(named: "\(items7[index])")
+=======
+                itemView.image = UIImage(named: "\(imagenes2[index])")
+                label.text = "\(nombres2[index])"
+            
+            }
+            if(carousel.tag == 3){
+                itemView.image = UIImage(named: "\(imagenes3[index])")
+                label.text = "\(nombres3[index])"
             }
             
+            if(carousel.tag == 4){
+                itemView.image = UIImage(named: "\(imagenes4[index])")
+                label.text = "\(nombres4[index])"
+>>>>>>> origin/master
+            }
+            
+            
             itemView.contentMode = UIViewContentMode.ScaleAspectFit
-            label = UILabel(frame:itemView.bounds)
+            
             label.textColor = UIColor(white: 1, alpha: 0.1)
             label.textAlignment = .Center
             label.textColor = UIColor.whiteColor()
@@ -134,9 +175,8 @@ iCarouselDataSource , iCarouselDelegate {
             label = itemView.viewWithTag(1) as! UILabel!
             
         }
-        
-        
-        label.text = "\(items3[index])"
+    
+       
         return itemView
         
     }
@@ -173,11 +213,11 @@ iCarouselDataSource , iCarouselDelegate {
             self.performSegueWithIdentifier("segueMap", sender: nil)
             //itemView.image = UIImage(named: "\(items7[index])")
         }
-        var numero: String = items4[index]
+        var numero: String = telefonos1[index]
         //self .performSegueWithIdentifier("imageDisplaySegue", sender: nil)
             print("Se ha presionado un telefono")
             print(numero)
-        var numerote: String = "tel://\(items4[index])"
+        var numerote: String = "tel://\(telefonos1[index])"
         
         UIApplication.sharedApplication().openURL(NSURL(string: numerote )!)
         

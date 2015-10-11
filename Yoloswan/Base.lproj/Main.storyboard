@@ -26,8 +26,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5am-Gp-CBR">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="119"/>
                                                 <subviews>
+<<<<<<< HEAD
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Frecuencia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV1-zj-Fju">
                                                         <rect key="frame" x="238" y="0.0" width="83" height="24"/>
+=======
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Contactos Frecuentes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV1-zj-Fju">
+                                                        <rect key="frame" x="197" y="0.0" width="166" height="24"/>
+>>>>>>> origin/master
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,8 +64,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Ju-hi-5co">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="129"/>
                                                 <subviews>
+<<<<<<< HEAD
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Horario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qye-8A-qe4">
                                                         <rect key="frame" x="251" y="0.0" width="57" height="24"/>
+=======
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Felicita a un amigo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qye-8A-qe4">
+                                                        <rect key="frame" x="206" y="0.0" width="148" height="24"/>
+>>>>>>> origin/master
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,8 +97,8 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ilL-fV-M5d">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="130"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Eventos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEk-uy-mF6">
-                                                        <rect key="frame" x="250" y="0.0" width="60" height="24"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="A donde ir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEk-uy-mF6">
+                                                        <rect key="frame" x="240" y="0.0" width="79" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,7 +167,11 @@
                         <outlet property="Carousel3" destination="kgH-NA-YGo" id="WVm-YQ-aAa"/>
                         <outlet property="Carousel4" destination="Gxd-rl-0vk" id="Apg-1V-cvF"/>
                         <outlet property="backGround" destination="8bC-Xf-vdC" id="M5Z-8q-TLs"/>
+<<<<<<< HEAD
                         <segue destination="zdn-2c-rbZ" kind="show" identifier="segueMap" id="DOq-yN-kWL"/>
+=======
+                        <segue destination="zdn-2c-rbZ" kind="show" id="uOD-Hu-jtj"/>
+>>>>>>> origin/master
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -177,10 +191,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mrg-EI-9JB">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qmK-vS-1QT" customClass="Ma">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="580"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qmK-vS-1QT">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                                         <animations/>
                                     </mapView>
                                 </subviews>
@@ -190,16 +204,19 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6eX-go-rIF" firstAttribute="top" secondItem="mrg-EI-9JB" secondAttribute="bottom" id="6IZ-12-5KF"/>
-                            <constraint firstItem="mrg-EI-9JB" firstAttribute="top" secondItem="gJQ-C8-yTe" secondAttribute="bottom" id="gu2-p1-tdH"/>
-                            <constraint firstItem="mrg-EI-9JB" firstAttribute="leading" secondItem="Dbl-MD-Plf" secondAttribute="leadingMargin" id="kJ6-GY-dKe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mrg-EI-9JB" secondAttribute="trailing" id="l30-Kj-mLH"/>
+                            <constraint firstItem="mrg-EI-9JB" firstAttribute="top" secondItem="Dbl-MD-Plf" secondAttribute="top" constant="20" id="D9e-E9-0Vt"/>
+                            <constraint firstItem="6eX-go-rIF" firstAttribute="top" secondItem="mrg-EI-9JB" secondAttribute="bottom" id="X0X-XZ-JuL"/>
+                            <constraint firstItem="mrg-EI-9JB" firstAttribute="leading" secondItem="Dbl-MD-Plf" secondAttribute="leading" id="mNd-4e-j3X"/>
+                            <constraint firstAttribute="trailing" secondItem="mrg-EI-9JB" secondAttribute="trailing" id="mWG-Wd-vEz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="qmK-vS-1QT" id="iz4-NU-OSb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31n-sw-4Ii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1560" y="870"/>
+            <point key="canvasLocation" x="1591" y="957"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="As7-aV-5ux">
@@ -210,6 +227,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
