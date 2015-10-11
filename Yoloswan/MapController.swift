@@ -43,15 +43,11 @@ class MapController: UIViewController {
         self.back.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
 
         
-        print(cadenita)
+        print(intIndex)
         print("holoooooooooooopi")
         print("holoooooooooooopi")
         print("holoooooooooooopi")
-        print(cadenita)
-        print(cadenita)
-        print(cadenita)
-        print(cadenita)
-        print(cadenita)
+        print(intIndex)
         
         switch intA{
                 case 3:

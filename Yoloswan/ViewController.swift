@@ -208,7 +208,8 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             var Random: MapController = segue.destinationViewController as! MapController
         
-            intA = AuxiliarInt
+            
+                intA = AuxiliarInt
             intIndex = AuxIndex
             cadenita = StringPass
 
