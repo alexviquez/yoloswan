@@ -21,7 +21,7 @@ iCarouselDataSource , iCarouselDelegate{
     
     
     
-    var items2: [String] = ["frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png"]
+    var items2: [String] = ["frecuente1.png","frecuente2.png","frecuente3.png","frecuente4.png","frecuente5.png"]
     var items3: [String] = ["Mamá","Papá"," Hijo","Sobrino","Primo"]
     var items4: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
     
@@ -81,9 +81,8 @@ iCarouselDataSource , iCarouselDelegate{
             //don't do anything specific to the index within
             //this `if (view == nil) {...}` statement because the view will be
             //recycled and used with other index values later
-            itemView = UIImageView(frame:CGRect(x:0, y:0, width:180 , height:95))
-            itemView.contentMode = UIViewContentMode.ScaleAspectFill
-            itemView.layer.borderWidth = 0.6
+            itemView = UIImageView(frame:CGRect(x:0,y:0,width:100 , height:100))
+            itemView.layer.borderWidth = 0.3
             itemView.layer.masksToBounds = false
             itemView.layer.borderColor = UIColor.clearColor().CGColor
             itemView.layer.cornerRadius = 15
@@ -111,8 +110,9 @@ iCarouselDataSource , iCarouselDelegate{
                 itemView.image = UIImage(named: "\(items2[index])")
                 
             }
+            itemView.contentMode = UIViewContentMode.ScaleAspectFit
             label = UILabel(frame:itemView.bounds)
-            label.backgroundColor = UIColor.clearColor()
+            label.textColor = UIColor(white: 1, alpha: 0.1)
             label.textAlignment = .Center
             label.textColor = UIColor.whiteColor()
             label.font = label.font.fontWithSize(15)
