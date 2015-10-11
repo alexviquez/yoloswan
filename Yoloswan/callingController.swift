@@ -11,7 +11,7 @@ import UIKit
 class callingController: UIViewController {
 
     @IBAction func backRoot(sender: AnyObject) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+       self.dismissViewControllerAnimated(true, completion: nil)
     }
     @IBOutlet weak var callOff: UIButton!
     @IBOutlet weak var labelNum: UILabel!
