@@ -13,8 +13,14 @@ iCarouselDataSource , iCarouselDelegate{
    
     
     @IBOutlet weak var Carousel2: iCarousel!
+    
+    @IBOutlet weak var Carousel: UIView!
+    
+    
+    
     var items2: [String] = ["frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png"]
     var items3: [String] = ["Mamá","Papá"," Hijo","Sobrino","Primo"]
+    var items4: [String] = ["5515442244","5543322122","5599083838","5517172626","5503928391"]
     
     var items: [Int] = []
     
@@ -32,10 +38,13 @@ iCarouselDataSource , iCarouselDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         Carousel2.tag = 0
+        
         Carousel2.type = .CoverFlow
        Carousel2.dataSource = self
         Carousel2.delegate = self
+        
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -53,20 +62,24 @@ iCarouselDataSource , iCarouselDelegate{
             //don't do anything specific to the index within
             //this `if (view == nil) {...}` statement because the view will be
             //recycled and used with other index values later
-            itemView = UIImageView(frame:CGRect(x:0, y:0, width:150 , height:150))
+            itemView = UIImageView(frame:CGRect(x:0, y:0, width:180 , height:95))
             itemView.contentMode = UIViewContentMode.ScaleAspectFill
-            
-            
-            
+            itemView.layer.borderWidth = 0.6
+            itemView.layer.masksToBounds = false
+            itemView.layer.borderColor = UIColor.clearColor().CGColor
+            itemView.layer.cornerRadius = 15
+            itemView.layer.cornerRadius = itemView.frame.size.height/3
+            itemView.clipsToBounds = true
             print("Holo")
             
             
-            itemView.contentMode = .Left
+            itemView.contentMode = .Top
             itemView.image = UIImage(named: "\(items2[index])")
             
             label = UILabel(frame:itemView.bounds)
             label.backgroundColor = UIColor.clearColor()
             label.textAlignment = .Center
+            label.textColor = UIColor.whiteColor()
             label.font = label.font.fontWithSize(15)
             label.tag = 1
             itemView.addSubview(label)
@@ -88,11 +101,25 @@ iCarouselDataSource , iCarouselDelegate{
     func carousel(carousel: iCarousel, valueForOption option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
         if (option == .Spacing)
         {
-            return value * 1.5
+            return value * 1.4
         }
         return value
     }
 
+    
+    func carousel(carousel: iCarousel, didSelectItemAtIndex index: Int) {
+        
+        var numero: String = items4[index]
+        //self .performSegueWithIdentifier("imageDisplaySegue", sender: nil)
+            print("Se ha presionado un telefono")
+            print(numero)
+        var numerote: String = "tel://\(items4[index])"
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: numerote )!)
+        
+    
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
