@@ -14,6 +14,7 @@
 		2C791FC31BC947350085633D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C791FC11BC947350085633D /* LaunchScreen.storyboard */; };
 		2C791FCE1BC947350085633D /* YoloswanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FCD1BC947350085633D /* YoloswanTests.swift */; };
 		2C791FD91BC947350085633D /* YoloswanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FD81BC947350085633D /* YoloswanUITests.swift */; };
+		2C997A291BCA018B004F04FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C997A281BCA018B004F04FA /* QuartzCore.framework */; };
 		5801105A1BC9914F00ECF194 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 580110591BC9914F00ECF194 /* iCarousel.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		2C791FD41BC947350085633D /* YoloswanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoloswanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C791FD81BC947350085633D /* YoloswanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloswanUITests.swift; sourceTree = "<group>"; };
 		2C791FDA1BC947350085633D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C997A281BCA018B004F04FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		580110571BC9914E00ECF194 /* Yoloswan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yoloswan-Bridging-Header.h"; sourceTree = "<group>"; };
 		580110581BC9914F00ECF194 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		580110591BC9914F00ECF194 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C997A291BCA018B004F04FA /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		2C791FAC1BC947330085633D = {
 			isa = PBXGroup;
 			children = (
+				2C997A281BCA018B004F04FA /* QuartzCore.framework */,
 				2C791FB71BC947340085633D /* Yoloswan */,
 				2C791FCC1BC947350085633D /* YoloswanTests */,
 				2C791FD71BC947350085633D /* YoloswanUITests */,
@@ -200,6 +204,7 @@
 				TargetAttributes = {
 					2C791FB41BC947340085633D = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 9HWUH94HAD;
 					};
 					2C791FC81BC947350085633D = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -406,11 +411,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Yoloswan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.Yoloswan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Yoloswan/Yoloswan-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -421,11 +429,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Yoloswan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.unam.Yoloswan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Yoloswan/Yoloswan-Bridging-Header.h";
 			};
 			name = Release;
