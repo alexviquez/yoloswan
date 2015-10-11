@@ -54,13 +54,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-qt-F0A">
-                                        <rect key="frame" x="0.0" y="132" width="560" height="131"/>
+                                        <rect key="frame" x="0.0" y="132" width="560" height="132"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Ju-hi-5co">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="129"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Felicita a un amigo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qye-8A-qe4">
-                                                        <rect key="frame" x="206" y="0.0" width="148" height="24"/>
+                                                        <rect key="frame" x="207" y="0.0" width="148" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,7 +88,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="130"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Reserva ya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEk-uy-mF6">
-                                                        <rect key="frame" x="238" y="0.0" width="83" height="24"/>
+                                                        <rect key="frame" x="239" y="0.0" width="83" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,13 +110,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3F-0q-CfK">
-                                        <rect key="frame" x="0.0" y="395" width="560" height="131"/>
+                                        <rect key="frame" x="0.0" y="395" width="560" height="132"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i1i-hi-bqI">
                                                 <rect key="frame" x="0.0" y="2" width="560" height="119"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Amigos Cercanos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZO-Ao-cWD">
-                                                        <rect key="frame" x="214" y="0.0" width="131" height="24"/>
+                                                        <rect key="frame" x="215" y="0.0" width="131" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -158,11 +158,43 @@
                         <outlet property="Carousel4" destination="Gxd-rl-0vk" id="Apg-1V-cvF"/>
                         <outlet property="backGround" destination="8bC-Xf-vdC" id="M5Z-8q-TLs"/>
                         <segue destination="zdn-2c-rbZ" kind="show" identifier="segueMapSites" id="DOq-yN-kWL"/>
+                        <segue destination="h3B-MR-UqQ" kind="show" id="SCJ-LH-E8U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1036" y="219"/>
+        </scene>
+        <!--Calling Controller-->
+        <scene sceneID="o2D-L6-KXM">
+            <objects>
+                <viewController id="h3B-MR-UqQ" customClass="callingController" customModule="Yoloswan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r6G-Nz-DcZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wQC-gK-rEM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ppb-wB-29T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="callingImage" translatesAutoresizingMaskIntoConstraints="NO" id="lJH-bO-fYc">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wQC-gK-rEM" firstAttribute="top" secondItem="lJH-bO-fYc" secondAttribute="bottom" id="TaZ-M4-CRj"/>
+                            <constraint firstItem="lJH-bO-fYc" firstAttribute="leading" secondItem="Ppb-wB-29T" secondAttribute="leading" id="WIG-8s-O7s"/>
+                            <constraint firstItem="lJH-bO-fYc" firstAttribute="top" secondItem="r6G-Nz-DcZ" secondAttribute="bottom" id="iwI-aY-bfH"/>
+                            <constraint firstAttribute="trailing" secondItem="lJH-bO-fYc" secondAttribute="trailing" id="zJD-R4-E3f"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqf-G9-Lm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1944" y="-38"/>
         </scene>
         <!--Map Controller-->
         <scene sceneID="kIe-F3-cG1">
@@ -230,7 +262,6 @@
                                 </subviews>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstItem="qmK-vS-1QT" firstAttribute="top" secondItem="mrg-EI-9JB" secondAttribute="top" id="8fL-ht-U16"/>
                                     <constraint firstItem="KVT-Ru-ZPr" firstAttribute="top" secondItem="qmK-vS-1QT" secondAttribute="bottom" id="I2l-Sl-NCn"/>
                                     <constraint firstAttribute="trailing" secondItem="qmK-vS-1QT" secondAttribute="trailing" id="cTQ-Lj-74i"/>
                                     <constraint firstItem="qmK-vS-1QT" firstAttribute="leading" secondItem="mrg-EI-9JB" secondAttribute="leading" id="cu1-x0-6el"/>
@@ -247,6 +278,7 @@
                             <constraint firstItem="mrg-EI-9JB" firstAttribute="top" secondItem="Dbl-MD-Plf" secondAttribute="topMargin" constant="40" id="IJJ-uL-gyu"/>
                             <constraint firstItem="eD3-9G-GK1" firstAttribute="centerX" secondItem="mrg-EI-9JB" secondAttribute="centerX" id="NYf-5O-kMW"/>
                             <constraint firstItem="eD3-9G-GK1" firstAttribute="leading" secondItem="Dbl-MD-Plf" secondAttribute="leading" id="PwU-kH-ICa"/>
+                            <constraint firstItem="mrg-EI-9JB" firstAttribute="top" secondItem="gJQ-C8-yTe" secondAttribute="bottom" id="afp-6x-5FF"/>
                             <constraint firstItem="mrg-EI-9JB" firstAttribute="top" secondItem="gJQ-C8-yTe" secondAttribute="bottom" id="gu2-p1-tdH"/>
                             <constraint firstItem="mrg-EI-9JB" firstAttribute="leading" secondItem="Dbl-MD-Plf" secondAttribute="leadingMargin" id="kJ6-GY-dKe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mrg-EI-9JB" secondAttribute="trailing" id="l30-Kj-mLH"/>
@@ -283,6 +315,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="callingImage" width="617" height="1099"/>
         <image name="lugar1" width="162" height="161"/>
     </resources>
 </document>
