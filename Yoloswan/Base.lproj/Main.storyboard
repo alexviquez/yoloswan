@@ -254,6 +254,7 @@
                     </view>
                     <connections>
                         <outlet property="back" destination="eD3-9G-GK1" id="cpx-Wq-gH4"/>
+                        <outlet property="imageM" destination="l9b-0D-Xg8" id="VOU-ni-Zbr"/>
                         <outlet property="mapView" destination="qmK-vS-1QT" id="Sqi-aB-cet"/>
                     </connections>
                 </viewController>

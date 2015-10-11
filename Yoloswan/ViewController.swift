@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate {
     var AuxiliarInt: Int = 0
     var AuxIndex: Int = 0
+    var imageMap: String?
     
     @IBOutlet weak var Carousel2: iCarousel!
     @IBOutlet weak var Carousel1: iCarousel!
@@ -152,12 +153,13 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
     
     
     func carousel(carousel: iCarousel, didSelectItemAtIndex index: Int) {
+        
         if(carousel.tag == 1){
             //itemView.image = UIImage(named: "\(items2[index])")
             AuxiliarInt = 1
             //performSegueWithIdentifier("segueMap", sender: nil)
             AuxIndex = index
-        
+
         }
         if(carousel.tag == 2){
             //itemView.image = UIImage(named: "\(items5[index])")
@@ -167,18 +169,21 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         }
         
         if(carousel.tag == 3){
+            imageMap = imagenes3[index] as! String
             //itemView.image = UIImage(named: "\(items6[index])")
             AuxiliarInt = 3
             performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
+            print(imageMap)
         }
         
         if(carousel.tag == 4){
             AuxiliarInt = 4
             performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
-            //itemView.image = UIImage(named: "\(items7[index])")
+            imageMap = imagenes4[index] as! String
         }
+        print(imageMap)
         var numero: String = telefonos1[index]
         //self .performSegueWithIdentifier("imageDisplaySegue", sender: nil)
         print("Se ha presionado un telefono")
@@ -187,6 +192,7 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         
         UIApplication.sharedApplication().openURL(NSURL(string: numerote )!)
         print(AuxiliarInt)
+        print(imageMap)
         
     }
     
@@ -200,19 +206,15 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            var Random: MapController = segue.destinationViewController as! MapController
-            
-            intA = AuxiliarInt
-            intIndex = AuxIndex
-            //sending 2 values
-            // Auxiliar Int = El carrucel
-            // Auxiliar Index = La posición del carrucel
+        if segue.identifier == "segueMapSites"{
+            let nextview = segue.destinationViewController as! MapController
+            nextview.mapImage = imageMap as String!
+            nextview.intA = AuxiliarInt
+            nextview.intIndex = AuxIndex
+        }
         
     }
     
-    
-    
-
 
 }
 
