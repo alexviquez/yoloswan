@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate {
     var AuxiliarInt: Int = 0
     var AuxIndex: Int = 0
+    var StringPass: String = ""
+    var StringPassImage: String = ""
     
     @IBOutlet weak var Carousel2: iCarousel!
     @IBOutlet weak var Carousel1: iCarousel!
@@ -157,6 +159,7 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             AuxiliarInt = 1
             //performSegueWithIdentifier("segueMap", sender: nil)
             AuxIndex = index
+            
         
         }
         if(carousel.tag == 2){
@@ -171,12 +174,15 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             AuxiliarInt = 3
             performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
+            imagenes3[index] = StringPassImage
         }
         
         if(carousel.tag == 4){
             AuxiliarInt = 4
             performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
+            imagenes4[index] = StringPassImage
+            
             //itemView.image = UIImage(named: "\(items7[index])")
         }
         var numero: String = telefonos1[index]
@@ -184,7 +190,7 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         print("Se ha presionado un telefono")
         print(numero)
         var numerote: String = "tel://\(telefonos1[index])"
-        
+        numerote = StringPass
         UIApplication.sharedApplication().openURL(NSURL(string: numerote )!)
         print(AuxiliarInt)
         
@@ -201,9 +207,11 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             var Random: MapController = segue.destinationViewController as! MapController
-            
+        
             intA = AuxiliarInt
             intIndex = AuxIndex
+            cadenita = StringPass
+
             //sending 2 values
             // Auxiliar Int = El carrucel
             // Auxiliar Index = La posición del carrucel
