@@ -190,7 +190,7 @@
                                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="KVT-Ru-ZPr">
                                         <rect key="frame" x="0.0" y="268" width="560" height="268"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel 5 Estrellas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A4t-7i-Lxm">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel 5 Estrellas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A4t-7i-Lxm">
                                                 <rect key="frame" x="184" y="49" width="359" height="23"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
@@ -256,6 +256,8 @@
                         <outlet property="back" destination="eD3-9G-GK1" id="cpx-Wq-gH4"/>
                         <outlet property="imageM" destination="l9b-0D-Xg8" id="VOU-ni-Zbr"/>
                         <outlet property="mapView" destination="qmK-vS-1QT" id="Sqi-aB-cet"/>
+                        <outlet property="phoneM" destination="3gW-P4-JM3" id="Trq-AC-UWi"/>
+                        <outlet property="textM" destination="A4t-7i-Lxm" id="CDz-HP-CaG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31n-sw-4Ii" userLabel="First Responder" sceneMemberID="firstResponder"/>

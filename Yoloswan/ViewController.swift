@@ -12,6 +12,8 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
     var AuxiliarInt: Int = 0
     var AuxIndex: Int = 0
     var imageMap: String?
+    var textMap: String?
+    var phoneMap: String?
     
     @IBOutlet weak var Carousel2: iCarousel!
     @IBOutlet weak var Carousel1: iCarousel!
@@ -97,7 +99,6 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             itemView.layer.cornerRadius = itemView.frame.size.height/3
             itemView.clipsToBounds = true
             label = UILabel(frame:itemView.bounds)
-            print("Holo")
             
             
             if(carousel.tag == 1){
@@ -123,12 +124,12 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             
             itemView.contentMode = UIViewContentMode.ScaleAspectFit
             
-            label.textColor = UIColor(white: 1, alpha: 0.1)
-            label.textAlignment = .Center
+            /*label.textColor = UIColor(white: 1, alpha: 0.1)
+            label.textAlignment = .Justified
             label.textColor = UIColor.whiteColor()
             label.font = label.font.fontWithSize(15)
             label.tag = 1
-            itemView.addSubview(label)
+            itemView.addSubview(label)*/
             
         }
         else
@@ -169,19 +170,23 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         }
         
         if(carousel.tag == 3){
-            imageMap = imagenes3[index] as! String
+            imageMap = imagenes3[index]
+            textMap = nombres3[index]
+            phoneMap = telefonos3[index]
             //itemView.image = UIImage(named: "\(items6[index])")
             AuxiliarInt = 3
             performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
-            print(imageMap)
         }
         
         if(carousel.tag == 4){
+            imageMap = imagenes4[index] 
+            textMap = nombres4[index]
+            phoneMap = telefonos4[index]
             AuxiliarInt = 4
             performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
-            imageMap = imagenes4[index] as! String
+            
         }
         print(imageMap)
         var numero: String = telefonos1[index]
@@ -209,6 +214,8 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         if segue.identifier == "segueMapSites"{
             let nextview = segue.destinationViewController as! MapController
             nextview.mapImage = imageMap as String!
+            nextview.mapText = textMap
+            nextview.mapPhone = phoneMap
             nextview.intA = AuxiliarInt
             nextview.intIndex = AuxIndex
         }

@@ -18,10 +18,14 @@ class MapController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var back: UIImageView!
     @IBOutlet weak var imageM: UIImageView!
+    @IBOutlet weak var textM: UILabel!
+    @IBOutlet weak var phoneM: UILabel!
     
     var mapImage: String?
     var intA: Int!
     var intIndex: Int!
+    var mapText: String?
+    var mapPhone: String?
     
     let initialLocation = CLLocationCoordinate2D(latitude: 20.65, longitude: -103.38)
     
@@ -44,7 +48,8 @@ class MapController: UIViewController {
         print(mapImage)
  
         self.imageM.image = UIImage(named: mapImage!)
-        //imageM.image = UIImage(named:"\(mapImage)" )
+        self.textM.text = mapText
+        self.phoneM.text = mapPhone
         
         self.back.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
 
