@@ -15,13 +15,51 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="OLS-3l-dAN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OLS-3l-dAN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="C57-Kv-3Ef"/>
+                            <constraint firstItem="OLS-3l-dAN" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="TSQ-wC-cXR">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="OLS-3l-dAN" secondAttribute="trailing" id="grK-qB-IN0"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="OLS-3l-dAN" secondAttribute="bottom" id="oDh-3d-dDx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="OLS-3l-dAN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="C57-Kv-3Ef"/>
+                                <exclude reference="TSQ-wC-cXR"/>
+                                <exclude reference="grK-qB-IN0"/>
+                                <exclude reference="oDh-3d-dDx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="OLS-3l-dAN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="C57-Kv-3Ef"/>
+                                <include reference="TSQ-wC-cXR"/>
+                                <include reference="grK-qB-IN0"/>
+                                <include reference="oDh-3d-dDx"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splash" width="400" height="710"/>
+    </resources>
 </document>
