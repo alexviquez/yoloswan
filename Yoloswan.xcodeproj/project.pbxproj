@@ -16,8 +16,6 @@
 		2C791FD91BC947350085633D /* YoloswanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FD81BC947350085633D /* YoloswanUITests.swift */; };
 		2C997A291BCA018B004F04FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C997A281BCA018B004F04FA /* QuartzCore.framework */; };
 		5801105A1BC9914F00ECF194 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 580110591BC9914F00ECF194 /* iCarousel.m */; settings = {ASSET_TAGS = (); }; };
-		848C98561BCA04BF0072E4EC /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C98551BCA04BF0072E4EC /* background2.png */; settings = {ASSET_TAGS = (); }; };
-		848C98581BCA063D0072E4EC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C98571BCA063D0072E4EC /* background.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +53,6 @@
 		580110571BC9914E00ECF194 /* Yoloswan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yoloswan-Bridging-Header.h"; sourceTree = "<group>"; };
 		580110581BC9914F00ECF194 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		580110591BC9914F00ECF194 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		848C98551BCA04BF0072E4EC /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
-		848C98571BCA063D0072E4EC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +114,6 @@
 				580110581BC9914F00ECF194 /* iCarousel.h */,
 				580110591BC9914F00ECF194 /* iCarousel.m */,
 				580110571BC9914E00ECF194 /* Yoloswan-Bridging-Header.h */,
-				848C98541BCA04970072E4EC /* Images */,
 			);
 			path = Yoloswan;
 			sourceTree = "<group>";
@@ -139,15 +134,6 @@
 				2C791FDA1BC947350085633D /* Info.plist */,
 			);
 			path = YoloswanUITests;
-			sourceTree = "<group>";
-		};
-		848C98541BCA04970072E4EC /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				848C98571BCA063D0072E4EC /* background.png */,
-				848C98551BCA04BF0072E4EC /* background2.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848C98561BCA04BF0072E4EC /* background2.png in Resources */,
-				848C98581BCA063D0072E4EC /* background.png in Resources */,
 				2C791FC31BC947350085633D /* LaunchScreen.storyboard in Resources */,
 				2C791FC01BC947350085633D /* Assets.xcassets in Resources */,
 				2C791FBE1BC947350085633D /* Main.storyboard in Resources */,

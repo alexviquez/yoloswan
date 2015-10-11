@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="132"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5am-Gp-CBR">
-                                                <rect key="frame" x="0.0" y="0.0" width="560" height="95"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="119"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGJ-uz-isn" customClass="iCarousel">
                                                         <rect key="frame" x="0.0" y="0.0" width="560" height="95"/>
@@ -35,104 +35,23 @@
                                                             <outlet property="delegate" destination="BYZ-38-t0r" id="s5P-bT-tJM"/>
                                                         </connections>
                                                     </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Frecuencia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV1-zj-Fju">
+                                                        <rect key="frame" x="238" y="95" width="83" height="24"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="PGJ-uz-isn" secondAttribute="bottom" id="1ad-2V-q5V"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="leading" secondItem="5am-Gp-CBR" secondAttribute="leading" id="2XV-RI-L9U"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="bottom" secondItem="5am-Gp-CBR" secondAttribute="bottomMargin" id="9HN-fa-f25"/>
-                                                    <constraint firstAttribute="bottom" secondItem="PGJ-uz-isn" secondAttribute="bottom" id="AIQ-qz-cvW"/>
-                                                    <constraint firstAttribute="bottom" secondItem="PGJ-uz-isn" secondAttribute="bottom" id="Afa-x5-nTe"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="leading" secondItem="5am-Gp-CBR" secondAttribute="leading" id="DKW-FJ-46S"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="centerX" secondItem="5am-Gp-CBR" secondAttribute="centerX" id="Eg7-Np-csb"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="trailing" secondItem="5am-Gp-CBR" secondAttribute="trailingMargin" id="IAA-qn-Ub6"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="top" secondItem="5am-Gp-CBR" secondAttribute="top" id="Lcp-xx-nZD"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="leading" secondItem="5am-Gp-CBR" secondAttribute="leading" id="N0N-rB-BwU"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="leading" secondItem="5am-Gp-CBR" secondAttribute="leadingMargin" id="ZTO-zM-YQG"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="top" secondItem="5am-Gp-CBR" secondAttribute="topMargin" id="fCO-lI-UwE"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="top" secondItem="5am-Gp-CBR" secondAttribute="top" id="gQ0-kv-9bu"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="centerY" secondItem="5am-Gp-CBR" secondAttribute="centerY" id="gef-Tz-MrW"/>
-                                                    <constraint firstAttribute="trailing" secondItem="PGJ-uz-isn" secondAttribute="trailing" id="hVu-5L-YvT"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="leading" secondItem="5am-Gp-CBR" secondAttribute="leading" id="k2y-Gv-Kck"/>
-                                                    <constraint firstAttribute="trailing" secondItem="PGJ-uz-isn" secondAttribute="trailing" id="khH-ry-xNb"/>
-                                                    <constraint firstAttribute="trailing" secondItem="PGJ-uz-isn" secondAttribute="trailing" id="qHI-d7-jmV"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="top" secondItem="5am-Gp-CBR" secondAttribute="top" id="sd2-X1-zg5"/>
-                                                    <constraint firstItem="PGJ-uz-isn" firstAttribute="top" secondItem="5am-Gp-CBR" secondAttribute="top" id="xNP-JE-lSr"/>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="1ad-2V-q5V"/>
-                                                        <exclude reference="2XV-RI-L9U"/>
-                                                        <exclude reference="9HN-fa-f25"/>
-                                                        <exclude reference="AIQ-qz-cvW"/>
-                                                        <exclude reference="Afa-x5-nTe"/>
-                                                        <exclude reference="DKW-FJ-46S"/>
-                                                        <exclude reference="Eg7-Np-csb"/>
-                                                        <exclude reference="IAA-qn-Ub6"/>
-                                                        <exclude reference="Lcp-xx-nZD"/>
-                                                        <exclude reference="N0N-rB-BwU"/>
-                                                        <exclude reference="ZTO-zM-YQG"/>
-                                                        <exclude reference="fCO-lI-UwE"/>
-                                                        <exclude reference="gQ0-kv-9bu"/>
-                                                        <exclude reference="gef-Tz-MrW"/>
-                                                        <exclude reference="hVu-5L-YvT"/>
-                                                        <exclude reference="k2y-Gv-Kck"/>
-                                                        <exclude reference="khH-ry-xNb"/>
-                                                        <exclude reference="qHI-d7-jmV"/>
-                                                        <exclude reference="sd2-X1-zg5"/>
-                                                        <exclude reference="xNP-JE-lSr"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="43" width="560" height="96"/>
-                                                    <mask key="constraints">
-                                                        <include reference="1ad-2V-q5V"/>
-                                                        <include reference="2XV-RI-L9U"/>
-                                                        <include reference="9HN-fa-f25"/>
-                                                        <include reference="AIQ-qz-cvW"/>
-                                                        <include reference="Afa-x5-nTe"/>
-                                                        <include reference="DKW-FJ-46S"/>
-                                                        <include reference="Eg7-Np-csb"/>
-                                                        <include reference="IAA-qn-Ub6"/>
-                                                        <include reference="Lcp-xx-nZD"/>
-                                                        <include reference="N0N-rB-BwU"/>
-                                                        <include reference="ZTO-zM-YQG"/>
-                                                        <include reference="fCO-lI-UwE"/>
-                                                        <include reference="gQ0-kv-9bu"/>
-                                                        <include reference="gef-Tz-MrW"/>
-                                                        <include reference="hVu-5L-YvT"/>
-                                                        <include reference="k2y-Gv-Kck"/>
-                                                        <include reference="khH-ry-xNb"/>
-                                                        <include reference="qHI-d7-jmV"/>
-                                                        <include reference="sd2-X1-zg5"/>
-                                                        <include reference="xNP-JE-lSr"/>
-                                                    </mask>
-                                                </variation>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frecuencia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV1-zj-Fju">
-                                                <rect key="frame" x="239" y="0.0" width="83" height="24"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
-                                                <color key="textColor" red="0.030030526220798492" green="0.0039532734081149101" blue="0.01231169980019331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                    <rect key="frame" x="138" y="6" width="84" height="24"/>
-                                                </variation>
-                                            </label>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="jV1-zj-Fju"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="subviews">
-                                                <include reference="jV1-zj-Fju"/>
-                                            </mask>
-                                        </variation>
+                                        <constraints>
+                                            <constraint firstItem="jV1-zj-Fju" firstAttribute="centerX" secondItem="dcN-NI-7rE" secondAttribute="centerX" id="fXK-Ie-UFv"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-qt-F0A">
                                         <rect key="frame" x="0.0" y="132" width="560" height="131"/>
@@ -151,9 +70,6 @@
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="252" y="106" width="57" height="24"/>
-                                                        </variation>
                                                     </label>
                                                 </subviews>
                                                 <animations/>
@@ -210,9 +126,6 @@
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="215" y="96" width="131" height="24"/>
-                                                        </variation>
                                                     </label>
                                                 </subviews>
                                                 <animations/>
@@ -229,6 +142,7 @@
                             </stackView>
                         </subviews>
                         <animations/>
+                        <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HGQ-U8-UIc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="0ft-ZL-vtz"/>
                             <constraint firstAttribute="bottomMargin" secondItem="HGQ-U8-UIc" secondAttribute="bottom" id="3bf-5x-X8G"/>
@@ -257,6 +171,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
