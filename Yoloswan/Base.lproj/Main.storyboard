@@ -209,19 +209,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OIZ-Pu-gp0" sceneMemberID="viewController">
                     <toolbarItems/>
-<<<<<<< HEAD
-                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" id="sUh-mU-cmo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-=======
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="sUh-mU-cmo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                         <color key="barTintColor" red="0.058823533356189728" green="0.19607844948768616" blue="0.36862745881080627" alpha="1" colorSpace="deviceRGB"/>
->>>>>>> origin/master
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

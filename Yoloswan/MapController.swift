@@ -12,6 +12,7 @@ import MapKit
 
 class MapController: UIViewController {
     var intA: Int = 0
+    var intIndex: Int = 0
     
     @IBOutlet weak var mapView: MKMapView!
     
