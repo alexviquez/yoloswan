@@ -72,6 +72,7 @@ iCarouselDataSource , iCarouselDelegate{
         var itemView: UIImageView
         if (view == nil)
         {
+            
             //don't do anything specific to the index within
             //this `if (view == nil) {...}` statement because the view will be
             //recycled and used with other index values later
@@ -87,8 +88,24 @@ iCarouselDataSource , iCarouselDelegate{
             
             
             itemView.contentMode = .Top
+            if(Carousel2.tag == 0){
             itemView.image = UIImage(named: "\(items2[index])")
+            }
+            if(Carousel1.tag == 1){
+                itemView.image = UIImage(named: "\(items2[index])")
+            }
             
+            if(Carousel1.tag == 2){
+                itemView.image = UIImage(named: "\(items2[index])")
+            }
+            
+            if(Carousel1.tag == 3){
+                itemView.image = UIImage(named: "\(items2[index])")
+            }
+            if(Carousel1.tag == 4){
+                itemView.image = UIImage(named: "\(items2[index])")
+                
+            }
             label = UILabel(frame:itemView.bounds)
             label.backgroundColor = UIColor.clearColor()
             label.textAlignment = .Center
