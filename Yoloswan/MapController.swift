@@ -7,17 +7,9 @@
 //
 
 import UIKit
-import MapKit
 
 class MapController: UIViewController {
-<<<<<<< HEAD
     var intA: Int = 0
-=======
-    
-    @IBOutlet var mapView: MKMapView!
-    
-
->>>>>>> origin/master
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +18,6 @@ class MapController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
         // Dispose of any resources that can be recreated.
     }
     
