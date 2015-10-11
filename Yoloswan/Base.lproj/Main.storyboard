@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HGQ-U8-UIc">
                                 <rect key="frame" x="20" y="74" width="560" height="526"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcN-NI-7rE">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dcN-NI-7rE">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="132"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5am-Gp-CBR">
@@ -53,7 +53,7 @@
                                             <constraint firstItem="jV1-zj-Fju" firstAttribute="centerX" secondItem="dcN-NI-7rE" secondAttribute="centerX" id="fXK-Ie-UFv"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-qt-F0A">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-qt-F0A">
                                         <rect key="frame" x="0.0" y="132" width="560" height="131"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Ju-hi-5co">
@@ -109,7 +109,7 @@
                                             <constraint firstItem="JEk-uy-mF6" firstAttribute="centerX" secondItem="FoV-W5-6b8" secondAttribute="centerX" id="zre-h3-y3y"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3F-0q-CfK">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3F-0q-CfK">
                                         <rect key="frame" x="0.0" y="395" width="560" height="131"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i1i-hi-bqI">
@@ -142,7 +142,6 @@
                             </stackView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HGQ-U8-UIc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="0ft-ZL-vtz"/>
                             <constraint firstAttribute="bottomMargin" secondItem="HGQ-U8-UIc" secondAttribute="bottom" id="3bf-5x-X8G"/>
