@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OIZ-Pu-gp0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OIZ-Pu-gp0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -54,13 +54,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-qt-F0A">
-                                        <rect key="frame" x="0.0" y="132" width="560" height="131"/>
+                                        <rect key="frame" x="0.0" y="132" width="560" height="132"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Ju-hi-5co">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="129"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Felicita a un amigo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qye-8A-qe4">
-                                                        <rect key="frame" x="206" y="0.0" width="148" height="24"/>
+                                                        <rect key="frame" x="207" y="0.0" width="148" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,7 +88,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="130"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Reserva ya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEk-uy-mF6">
-                                                        <rect key="frame" x="238" y="0.0" width="83" height="24"/>
+                                                        <rect key="frame" x="239" y="0.0" width="83" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,13 +110,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3F-0q-CfK">
-                                        <rect key="frame" x="0.0" y="395" width="560" height="131"/>
+                                        <rect key="frame" x="0.0" y="395" width="560" height="132"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i1i-hi-bqI">
                                                 <rect key="frame" x="0.0" y="2" width="560" height="119"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Amigos Cercanos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZO-Ao-cWD">
-                                                        <rect key="frame" x="214" y="0.0" width="131" height="24"/>
+                                                        <rect key="frame" x="215" y="0.0" width="131" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,7 +157,7 @@
                         <outlet property="Carousel3" destination="kgH-NA-YGo" id="WVm-YQ-aAa"/>
                         <outlet property="Carousel4" destination="Gxd-rl-0vk" id="Apg-1V-cvF"/>
                         <outlet property="backGround" destination="8bC-Xf-vdC" id="M5Z-8q-TLs"/>
-                        <segue destination="zdn-2c-rbZ" kind="show" identifier="segueMap" id="DOq-yN-kWL"/>
+                        <segue destination="zdn-2c-rbZ" kind="show" identifier="segueMapSites" id="DOq-yN-kWL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -188,6 +188,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Establecimiento: Hotel 5 Estrellas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4t-7i-Lxm">
                                                 <rect key="frame" x="214" y="54" width="346" height="50"/>
+                                                <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="MMk-Ol-eHh"/>
                                                 </constraints>
@@ -197,6 +198,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección: fuck fuck fuck fuck fuck fuck fuck fuckf uck fuck fuck" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gW-P4-JM3">
                                                 <rect key="frame" x="214" y="112" width="346" height="79"/>
+                                                <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="79" id="70w-pa-VDB"/>
                                                 </constraints>
@@ -206,8 +208,10 @@
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lugar1" translatesAutoresizingMaskIntoConstraints="NO" id="l9b-0D-Xg8">
                                                 <rect key="frame" x="0.0" y="45" width="177" height="177"/>
+                                                <animations/>
                                             </imageView>
                                         </subviews>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="l9b-0D-Xg8" firstAttribute="top" secondItem="KVT-Ru-ZPr" secondAttribute="top" constant="45" id="9XN-Xb-vlm"/>

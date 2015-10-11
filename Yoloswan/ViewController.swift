@@ -155,27 +155,27 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         if(carousel.tag == 1){
             //itemView.image = UIImage(named: "\(items2[index])")
             AuxiliarInt = 1
-            performSegueWithIdentifier("segueMap", sender: nil)
+            //performSegueWithIdentifier("segueMap", sender: nil)
             AuxIndex = index
         
         }
         if(carousel.tag == 2){
             //itemView.image = UIImage(named: "\(items5[index])")
             AuxiliarInt = 2
-            performSegueWithIdentifier("segueMap", sender: nil)
+            //performSegueWithIdentifier("segueMap", sender: nil)
             AuxIndex = index
         }
         
         if(carousel.tag == 3){
             //itemView.image = UIImage(named: "\(items6[index])")
             AuxiliarInt = 3
-            performSegueWithIdentifier("segueMap", sender: nil)
+            performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
         }
         
         if(carousel.tag == 4){
             AuxiliarInt = 4
-            performSegueWithIdentifier("segueMap", sender: nil)
+            performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
             //itemView.image = UIImage(named: "\(items7[index])")
         }
@@ -186,7 +186,7 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         var numerote: String = "tel://\(telefonos1[index])"
         
         UIApplication.sharedApplication().openURL(NSURL(string: numerote )!)
-        
+        print(AuxiliarInt)
         
     }
     
@@ -198,15 +198,16 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         
     }
     
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "segueMap" {
-            let Random: MapController = segue.destinationViewController as! MapController
-            Random.intA = AuxiliarInt
-            Random.intIndex = AuxIndex
+            var Random: MapController = segue.destinationViewController as! MapController
+            
+            intA = AuxiliarInt
+            intIndex = AuxIndex
             //sending 2 values
             // Auxiliar Int = El carrucel
             // Auxiliar Index = La posición del carrucel
-        }
+        
     }
     
     
