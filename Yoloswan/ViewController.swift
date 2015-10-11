@@ -14,6 +14,7 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
     var imageMap: String?
     var textMap: String?
     var phoneMap: String?
+    var phoneCall: String?
     
     @IBOutlet weak var Carousel2: iCarousel!
     @IBOutlet weak var Carousel1: iCarousel!
@@ -158,21 +159,26 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         if(carousel.tag == 1){
             //itemView.image = UIImage(named: "\(items2[index])")
             AuxiliarInt = 1
-            //performSegueWithIdentifier("segueMap", sender: nil)
+            
             AuxIndex = index
+            phoneCall = telefonos1[index]
+            performSegueWithIdentifier("segueModal", sender: nil)
 
         }
         if(carousel.tag == 2){
             //itemView.image = UIImage(named: "\(items5[index])")
             AuxiliarInt = 2
-            //performSegueWithIdentifier("segueMap", sender: nil)
             AuxIndex = index
+            phoneCall = telefonos2[index]
+            performSegueWithIdentifier("segueModal", sender: nil)
+            
         }
         
         if(carousel.tag == 3){
             imageMap = imagenes3[index]
             textMap = nombres3[index]
             phoneMap = telefonos3[index]
+            
             //itemView.image = UIImage(named: "\(items6[index])")
             AuxiliarInt = 3
             performSegueWithIdentifier("segueMapSites", sender: nil)
@@ -194,6 +200,7 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         print("Se ha presionado un telefono")
         print(numero)
         var numerote: String = "tel://\(telefonos1[index])"
+        
         
         UIApplication
             .sharedApplication().openURL(NSURL(string: numerote )!)
@@ -220,6 +227,11 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             nextview.intA = AuxiliarInt
             nextview.intIndex = AuxIndex
         }
+        if segue.identifier == "segueModal"{
+            let nextview2 = segue.destinationViewController as! callingController
+            nextview2.Strinng = phoneCall as String!
+        }
+
         
     }
     

@@ -10,8 +10,19 @@ import UIKit
 
 class callingController: UIViewController {
 
+    @IBAction func backRoot(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    @IBOutlet weak var callOff: UIButton!
+    @IBOutlet weak var labelNum: UILabel!
+    var Strinng: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+   
+        
+        
+        labelNum.text = Strinng
 
         // Do any additional setup after loading the view.
     }

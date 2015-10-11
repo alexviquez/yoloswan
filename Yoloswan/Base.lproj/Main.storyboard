@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OIZ-Pu-gp0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OIZ-Pu-gp0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -53,14 +53,14 @@
                                             <constraint firstItem="jV1-zj-Fju" firstAttribute="centerX" secondItem="dcN-NI-7rE" secondAttribute="centerX" id="fXK-Ie-UFv"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-qt-F0A">
-                                        <rect key="frame" x="0.0" y="132" width="560" height="132"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QhO-qt-F0A">
+                                        <rect key="frame" x="0.0" y="132" width="560" height="131"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Ju-hi-5co">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="129"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Felicita a un amigo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qye-8A-qe4">
-                                                        <rect key="frame" x="207" y="0.0" width="148" height="24"/>
+                                                        <rect key="frame" x="206" y="0.0" width="148" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,11 +88,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="130"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Reserva ya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEk-uy-mF6">
-                                                        <rect key="frame" x="239" y="0.0" width="83" height="24"/>
+                                                        <rect key="frame" x="238" y="0.0" width="83" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="239" y="0.0" width="83" height="24"/>
+                                                        </variation>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kgH-NA-YGo" customClass="iCarousel">
                                                         <rect key="frame" x="0.0" y="24" width="560" height="106"/>
@@ -109,18 +112,21 @@
                                             <constraint firstItem="JEk-uy-mF6" firstAttribute="centerX" secondItem="FoV-W5-6b8" secondAttribute="centerX" id="zre-h3-y3y"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3F-0q-CfK">
-                                        <rect key="frame" x="0.0" y="395" width="560" height="132"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3F-0q-CfK">
+                                        <rect key="frame" x="0.0" y="395" width="560" height="131"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i1i-hi-bqI">
                                                 <rect key="frame" x="0.0" y="2" width="560" height="119"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Amigos Cercanos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZO-Ao-cWD">
-                                                        <rect key="frame" x="215" y="0.0" width="131" height="24"/>
+                                                        <rect key="frame" x="214" y="0.0" width="131" height="24"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="215" y="0.0" width="131" height="24"/>
+                                                        </variation>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gxd-rl-0vk" customClass="iCarousel">
                                                         <rect key="frame" x="0.0" y="24" width="560" height="95"/>
@@ -158,6 +164,7 @@
                         <outlet property="Carousel4" destination="Gxd-rl-0vk" id="Apg-1V-cvF"/>
                         <outlet property="backGround" destination="8bC-Xf-vdC" id="M5Z-8q-TLs"/>
                         <segue destination="zdn-2c-rbZ" kind="show" identifier="segueMapSites" id="DOq-yN-kWL"/>
+                        <segue destination="XQN-2T-Dzl" kind="modal" identifier="segueModal" id="HhK-8e-2WM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -180,20 +187,52 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="556790-2234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qL-D6-nBA">
+                                <rect key="frame" x="249" y="45" width="103" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQN-Td-0GB">
+                                <rect key="frame" x="66" y="461" width="113" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="k2z-du-zeL">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="102"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <action selector="backRoot:" destination="XQN-2T-Dzl" eventType="touchUpInside" id="57g-po-iJ2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2qL-D6-nBA" firstAttribute="centerX" secondItem="gND-Iq-Atc" secondAttribute="centerX" id="0JC-dn-5Rc"/>
+                            <constraint firstItem="FQN-Td-0GB" firstAttribute="leading" secondItem="gND-Iq-Atc" secondAttribute="leadingMargin" constant="46" id="37t-Jf-eKP">
+                                <variation key="heightClass=regular-widthClass=compact" constant="28"/>
+                            </constraint>
                             <constraint firstItem="C0I-6E-HLQ" firstAttribute="top" secondItem="AGz-e7-T8n" secondAttribute="bottom" id="Be4-gy-FVK"/>
                             <constraint firstItem="AGz-e7-T8n" firstAttribute="top" secondItem="wyQ-e5-iVJ" secondAttribute="bottom" id="Pay-1O-72f"/>
                             <constraint firstAttribute="trailing" secondItem="AGz-e7-T8n" secondAttribute="trailing" id="cRs-Qg-6yD"/>
+                            <constraint firstItem="2qL-D6-nBA" firstAttribute="top" secondItem="wyQ-e5-iVJ" secondAttribute="bottom" constant="25" id="iz5-7K-fWh"/>
                             <constraint firstItem="AGz-e7-T8n" firstAttribute="leading" secondItem="gND-Iq-Atc" secondAttribute="leading" id="ocd-fQ-GFs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FQN-Td-0GB" secondAttribute="trailing" constant="401" id="ruP-co-HTH">
+                                <variation key="heightClass=regular-widthClass=compact" constant="259"/>
+                            </constraint>
+                            <constraint firstItem="C0I-6E-HLQ" firstAttribute="top" secondItem="FQN-Td-0GB" secondAttribute="bottom" constant="66" id="suQ-oJ-r8a">
+                                <variation key="heightClass=regular-widthClass=compact" constant="84"/>
+                            </constraint>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="callOff" destination="FQN-Td-0GB" id="r1l-4S-cBF"/>
+                        <outlet property="labelNum" destination="2qL-D6-nBA" id="TQ3-wq-fna"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhi-X1-ovM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763" y="159"/>
+            <point key="canvasLocation" x="1762.5" y="159"/>
         </scene>
         <!--Map Controller-->
         <scene sceneID="kIe-F3-cG1">
