@@ -124,7 +124,6 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             
             label.textColor = UIColor(white: 1, alpha: 0.1)
             label.textAlignment = .Center
-            label.sizeToFit() 
             label.textColor = UIColor.whiteColor()
             label.font = label.font.fontWithSize(15)
             label.tag = 1

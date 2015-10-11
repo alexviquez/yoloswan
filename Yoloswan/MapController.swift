@@ -169,22 +169,127 @@ class MapController: UIViewController {
                         
                         
                         }
-                case 4:
-                    let location = CLLocationCoordinate2D(
-                        latitude: 20.654285,
-                        longitude: -103.3939437
-                    )
-                    // 2
-                    let span = MKCoordinateSpanMake(0.05, 0.05)
-                    let region = MKCoordinateRegion(center: location, span: span)
-                    mapView.setRegion(region, animated: true)
-                    
-                    //3
-                    let annotation = MKPointAnnotation()
-                    annotation.coordinate = location
-                    annotation.title = "Hackton AT&T"
-                    annotation.subtitle = "Guadalajara"
-                    mapView.addAnnotation(annotation)
+        case 4:
+            let location = CLLocationCoordinate2D(
+            latitude: 20.654285,
+            longitude: -103.3939437
+            )
+        // 2
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegion(center: location, span: span)
+        mapView.setRegion(region, animated: true)
+        
+        //3
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "Expo Guadalajara"
+        annotation.subtitle = "Guadalajara"
+        mapView.addAnnotation(annotation)
+            switch intIndex {
+                
+            case 0:
+                // Hotel Real Inn
+                let location = CLLocationCoordinate2D(
+                    latitude: 20.65567,
+                    longitude: -103.39143
+                )
+                // 2
+                let span = MKCoordinateSpanMake(0.05, 0.05)
+                let region = MKCoordinateRegion(center: location, span: span)
+                mapView.setRegion(region, animated: true)
+                
+                //3
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = location
+                annotation.title = "Laura"
+                annotation.subtitle = "Guadalajara"
+                mapView.addAnnotation(annotation)
+                
+                
+                break
+            case 1:
+                // Real Ibis
+                let location = CLLocationCoordinate2D(
+                    latitude: 20.66090,
+                    longitude: -103.38107
+                )
+                // 2
+                let span = MKCoordinateSpanMake(0.05, 0.05)
+                let region = MKCoordinateRegion(center: location, span: span)
+                mapView.setRegion(region, animated: true)
+                
+                //3
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = location
+                annotation.title = "Pablo"
+                annotation.subtitle = "Guadalajara"
+                mapView.addAnnotation(annotation)
+                
+                
+                break
+            case 2:
+                // Starbucks
+                let location = CLLocationCoordinate2D(
+                    latitude: 20.65500,
+                    longitude: -103.40040
+                )
+                // 2
+                let span = MKCoordinateSpanMake(0.05, 0.05)
+                let region = MKCoordinateRegion(center: location, span: span)
+                mapView.setRegion(region, animated: true)
+                
+                //3
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = location
+                annotation.title = "Sara"
+                annotation.subtitle = "Guadalajara"
+                mapView.addAnnotation(annotation)
+                
+                
+                break
+            case 3:
+                // papas
+                let location = CLLocationCoordinate2D(
+                    latitude: 20.66081,
+                    longitude: -103.39582
+                )
+                // 2
+                let span = MKCoordinateSpanMake(0.05, 0.05)
+                let region = MKCoordinateRegion(center: location, span: span)
+                mapView.setRegion(region, animated: true)
+                
+                //3
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = location
+                annotation.title = "Paulina"
+                annotation.subtitle = "Guadalajara"
+                mapView.addAnnotation(annotation)
+                
+                break
+            case 4:
+                // Estancia Gaucha
+                let location = CLLocationCoordinate2D(
+                    latitude: 20.66661,
+                    longitude: -103.38744
+                )
+                // 2
+                let span = MKCoordinateSpanMake(0.05, 0.05)
+                let region = MKCoordinateRegion(center: location, span: span)
+                mapView.setRegion(region, animated: true)
+                
+                //3
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = location
+                annotation.title = "Alfonso"
+                annotation.subtitle = "Guadalajara"
+                mapView.addAnnotation(annotation)
+                
+                break
+            default:
+                break
+                
+                
+            }
             
         default:
             break
