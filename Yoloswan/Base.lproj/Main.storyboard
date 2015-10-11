@@ -163,6 +163,43 @@
             </objects>
             <point key="canvasLocation" x="1036" y="219"/>
         </scene>
+        <!--Map Controller-->
+        <scene sceneID="kIe-F3-cG1">
+            <objects>
+                <viewController id="zdn-2c-rbZ" customClass="MapController" customModule="Yoloswan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gJQ-C8-yTe"/>
+                        <viewControllerLayoutGuide type="bottom" id="6eX-go-rIF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dbl-MD-Plf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mrg-EI-9JB">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qmK-vS-1QT" customClass="Ma">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="580"/>
+                                        <animations/>
+                                    </mapView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6eX-go-rIF" firstAttribute="top" secondItem="mrg-EI-9JB" secondAttribute="bottom" id="6IZ-12-5KF"/>
+                            <constraint firstItem="mrg-EI-9JB" firstAttribute="top" secondItem="gJQ-C8-yTe" secondAttribute="bottom" id="gu2-p1-tdH"/>
+                            <constraint firstItem="mrg-EI-9JB" firstAttribute="leading" secondItem="Dbl-MD-Plf" secondAttribute="leadingMargin" id="kJ6-GY-dKe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mrg-EI-9JB" secondAttribute="trailing" id="l30-Kj-mLH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31n-sw-4Ii" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="870"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="As7-aV-5ux">
             <objects>
