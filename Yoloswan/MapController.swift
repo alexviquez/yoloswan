@@ -9,7 +9,7 @@
 import UIKit
 
 class MapController: UIViewController {
-
+    var intA: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 

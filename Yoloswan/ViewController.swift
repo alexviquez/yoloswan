@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController,
-iCarouselDataSource , iCarouselDelegate{
+iCarouselDataSource , iCarouselDelegate {
    
     
     @IBOutlet weak var Carousel2: iCarousel!
@@ -25,8 +25,8 @@ iCarouselDataSource , iCarouselDelegate{
     var items3: [String] = ["Mamá","Papá"," Hijo","Sobrino","Primo"]
     var items4: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
     
-    var items5: [String] = ["felicita1.png","felicita1.png","felicita1.png","felicita1.png","felicita1.png"]
-    var items6: [String] = ["lugar1.png","lugar2.png","lugar3.png","lugar1.png","lugar2.png"]
+    var items5: [String] = ["felicita1.png","felicita2.png","felicita3.png","felicita4.png","felicita5.png"]
+    var items6: [String] = ["lugar1.png","lugar2.png","lugar2.png","lugar1.png","lugar2.png"]
     var items7: [String] = ["cercano1.png","cercano2.png","cercano3.png","cercano4.png","cercano5.png"]
     
     var items: [Int] = []
@@ -71,6 +71,13 @@ iCarouselDataSource , iCarouselDelegate{
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+   
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueMap" {
+            let Random: MapController = segue.destinationViewController as! MapController
+            Random.intA = AuxiliarInt
+        }
+    
     
     func numberOfItemsInCarousel(carousel: iCarousel) -> Int {
         return items.count
@@ -94,19 +101,19 @@ iCarouselDataSource , iCarouselDelegate{
             itemView.clipsToBounds = true
             print("Holo")
             itemView.contentMode = .Top
-            if(Carousel2.tag == 1){
+            if(carousel.tag == 1){
             itemView.image = UIImage(named: "\(items2[index])")
             
             }
-            if(Carousel1.tag == 2){
+            if(carousel.tag == 2){
                 itemView.image = UIImage(named: "\(items5[index])")
             }
             
-            if(Carousel3.tag == 3){
+            if(carousel.tag == 3){
                 itemView.image = UIImage(named: "\(items6[index])")
             }
             
-            if(Carousel4.tag == 4){
+            if(carousel.tag == 4){
                 itemView.image = UIImage(named: "\(items7[index])")
             }
             
@@ -146,20 +153,24 @@ iCarouselDataSource , iCarouselDelegate{
         if(Carousel2.tag == 1){
             //itemView.image = UIImage(named: "\(items2[index])")
             AuxiliarInt = 1
+            self.performSegueWithIdentifier("segueMap", sender: nil)
             
         }
         if(Carousel1.tag == 2){
             //itemView.image = UIImage(named: "\(items5[index])")
             AuxiliarInt = 2
+            self.performSegueWithIdentifier("segueMap", sender: nil)
         }
         
         if(Carousel3.tag == 3){
             //itemView.image = UIImage(named: "\(items6[index])")
             AuxiliarInt = 3
+            self.performSegueWithIdentifier("segueMap", sender: nil)
         }
         
         if(Carousel4.tag == 4){
-            AuxiliarInt = 1
+            AuxiliarInt = 4
+            self.performSegueWithIdentifier("segueMap", sender: nil)
             //itemView.image = UIImage(named: "\(items7[index])")
         }
         var numero: String = items4[index]
@@ -170,14 +181,11 @@ iCarouselDataSource , iCarouselDelegate{
         
         UIApplication.sharedApplication().openURL(NSURL(string: numerote )!)
         
+        }
     
-    }
     
-    override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
-        print("holooooo")
-        
-    }
-    override func didReceiveMemoryWarning() {
+    
+    func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
