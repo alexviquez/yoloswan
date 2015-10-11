@@ -17,6 +17,8 @@ iCarouselDataSource , iCarouselDelegate{
     @IBOutlet weak var Carousel3: iCarousel!
     @IBOutlet weak var Carousel4: iCarousel!
     
+    @IBOutlet weak var backGround: UIView!
+    
     
     
     var items2: [String] = ["frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png"]
@@ -39,6 +41,8 @@ iCarouselDataSource , iCarouselDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background2.png")!)
         
         Carousel2.tag = 1
         Carousel1.tag = 2
