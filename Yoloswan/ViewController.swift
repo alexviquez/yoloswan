@@ -10,40 +10,39 @@ import UIKit
 
 class ViewController: UIViewController,
 iCarouselDataSource , iCarouselDelegate{
-    @IBOutlet weak var Carousel1: iCarousel!
+   
+    
+    @IBOutlet weak var Carousel2: iCarousel!
+    var items2: [String] = ["frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png"]
+    var items3: [String] = ["Mamá","Papá"," Hijo","Sobrino","Primo"]
     
     var items: [Int] = []
-    var items2: [String] = ["frequencia1.png","frecuencia2.png","frecuencia3.png","frecuencia4.png","frecuencia5.png","frecuencia6.png"]
-    var items3: [String] = ["Mamá","Papá"," Hijo","Sobrino","Primo","Hola"]
     
     
-    
-    @IBOutlet var carousel : iCarousel!
     
     override func awakeFromNib()
     {
         super.awakeFromNib()
-        for i in 0...5
+        for i in 0...4
         {
             items.append(i)
         }
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Carousel1.tag = 0
-        Carousel1.type = .CoverFlow
-        Carousel1.delegate = self
-        Carousel1.dataSource = self
+        Carousel2.tag = 0
+        Carousel2.type = .CoverFlow
+       Carousel2.dataSource = self
+        Carousel2.delegate = self
         
         
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func numberOfItemsInCarousel(carousel: iCarousel) -> Int {
-        
-        return items2.count
-        
+        return items.count
     }
     
     func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView {
@@ -54,14 +53,21 @@ iCarouselDataSource , iCarouselDelegate{
             //don't do anything specific to the index within
             //this `if (view == nil) {...}` statement because the view will be
             //recycled and used with other index values later
-            itemView = UIImageView(frame:CGRect(x:0, y:0, width:95, height:95))
+            itemView = UIImageView(frame:CGRect(x:0, y:0, width:150 , height:150))
+            itemView.contentMode = UIViewContentMode.ScaleAspectFill
             
-            itemView.contentMode = .Center
+            
+            
+            print("Holo")
+            
+            
+            itemView.contentMode = .Left
+            itemView.image = UIImage(named: "\(items2[index])")
             
             label = UILabel(frame:itemView.bounds)
             label.backgroundColor = UIColor.clearColor()
-            label.textAlignment = .Natural
-            label.font = label.font.fontWithSize(10)
+            label.textAlignment = .Center
+            label.font = label.font.fontWithSize(15)
             label.tag = 1
             itemView.addSubview(label)
             
@@ -71,11 +77,20 @@ iCarouselDataSource , iCarouselDelegate{
             //get a reference to the label in the recycled view
             itemView = view as! UIImageView;
             label = itemView.viewWithTag(1) as! UILabel!
+            
         }
-        itemView.image = UIImage(named: "\(items2[index])")
-        label.text = "\(items2[index])"
+        
+        
+        label.text = "\(items3[index])"
         return itemView
         
+    }
+    func carousel(carousel: iCarousel, valueForOption option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
+        if (option == .Spacing)
+        {
+            return value * 1.5
+        }
+        return value
     }
 
     override func didReceiveMemoryWarning() {

@@ -151,7 +151,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="BT6-2d-YbK"/>
                     <connections>
-                        <outlet property="Carousel1" destination="PGJ-uz-isn" id="oYo-Zb-DYY"/>
+                        <outlet property="Carousel2" destination="PGJ-uz-isn" id="IJE-EE-fI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
