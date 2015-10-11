@@ -195,7 +195,8 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         print(numero)
         var numerote: String = "tel://\(telefonos1[index])"
         
-        UIApplication.sharedApplication().openURL(NSURL(string: numerote )!)
+        UIApplication
+            .sharedApplication().openURL(NSURL(string: numerote )!)
         print(AuxiliarInt)
         print(imageMap)
         

@@ -17,6 +17,7 @@
 		2C997A291BCA018B004F04FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C997A281BCA018B004F04FA /* QuartzCore.framework */; };
 		5801105A1BC9914F00ECF194 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 580110591BC9914F00ECF194 /* iCarousel.m */; settings = {ASSET_TAGS = (); }; };
 		58E5AD9D1BCA438F00F332E3 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5AD9C1BCA438F00F332E3 /* MapController.swift */; settings = {ASSET_TAGS = (); }; };
+		58E850F41BCAD58D00209617 /* callingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E850F31BCAD58D00209617 /* callingController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		580110581BC9914F00ECF194 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		580110591BC9914F00ECF194 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		58E5AD9C1BCA438F00F332E3 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapController.swift; path = Yoloswan/MapController.swift; sourceTree = "<group>"; };
+		58E850F31BCAD58D00209617 /* callingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = callingController.swift; path = Yoloswan/callingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		2C791FAC1BC947330085633D = {
 			isa = PBXGroup;
 			children = (
+				58E850F31BCAD58D00209617 /* callingController.swift */,
 				58E5AD9C1BCA438F00F332E3 /* MapController.swift */,
 				2C997A281BCA018B004F04FA /* QuartzCore.framework */,
 				2C791FB71BC947340085633D /* Yoloswan */,
@@ -273,6 +276,7 @@
 			files = (
 				58E5AD9D1BCA438F00F332E3 /* MapController.swift in Sources */,
 				5801105A1BC9914F00ECF194 /* iCarousel.m in Sources */,
+				58E850F41BCAD58D00209617 /* callingController.swift in Sources */,
 				2C791FBB1BC947340085633D /* ViewController.swift in Sources */,
 				2C791FB91BC947340085633D /* AppDelegate.swift in Sources */,
 			);
