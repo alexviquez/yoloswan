@@ -43,6 +43,7 @@ iCarouselDataSource , iCarouselDelegate{
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background2.png")!)
+        self.view.contentMode = .ScaleAspectFit
         
         Carousel2.tag = 1
         Carousel1.tag = 2
