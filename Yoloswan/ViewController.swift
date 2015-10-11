@@ -20,12 +20,12 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
     @IBOutlet weak var backGround: UIView!
     var imagenes1: [String] = ["frecuente1.png","frecuente2.png","frecuente3.png","frecuente4.png","frecuente5.png"]
     var imagenes2: [String] = ["felicita1.png","felicita2.png","felicita3.png","felicita4.png","felicita5.png"]
-    var imagenes3: [String] = ["lugar1.png","lugar2.png","lugar3.png","lugar1.png","lugar2.png"]
+    var imagenes3: [String] = ["lugar1.png","lugar2.png","lugar3.png","lugares4.png","lugares6.png"]
     var imagenes4: [String] = ["cercano1.png","cercano2.png","cercano3.png","cercano4.png","cercano5.png"]
     
     var nombres1: [String] = ["Claudia","Jennifer","Diego","Mauricio","Alexa"]
     var nombres2: [String] = ["Sofía","Ana"," Mamá","Karla","Juan"]
-    var nombres3: [String] = ["Inn Fiesta","Ibis Hotel","Tacos","Inn Fiesta","Ibis Hotel"]
+    var nombres3: [String] = ["Real Inn","Ibis Hotel","Starbucks","Papas","Ibis Hotel"]
     var nombres4: [String] = ["Laura","Pablo","Sara","Paulina","Alfonso"]
     
     var telefonos1: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
@@ -124,6 +124,7 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             
             label.textColor = UIColor(white: 1, alpha: 0.1)
             label.textAlignment = .Center
+            label.sizeToFit() 
             label.textColor = UIColor.whiteColor()
             label.font = label.font.fontWithSize(15)
             label.tag = 1
