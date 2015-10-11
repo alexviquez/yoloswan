@@ -11,7 +11,13 @@ import UIKit
 class ViewController: UIViewController,
 iCarouselDataSource , iCarouselDelegate{
     @IBOutlet weak var Carousel1: iCarousel!
+    
     var items: [Int] = []
+    var items2: [String] = ["frequencia1.png","frecuencia2.png","frecuencia3.png","frecuencia4.png","frecuencia5.png","frecuencia6.png"]
+    var items3: [String] = ["Mamá","Papá"," Hijo","Sobrino","Primo","Hola"]
+    
+    
+    
     @IBOutlet var carousel : iCarousel!
     
     override func awakeFromNib()
@@ -27,15 +33,17 @@ iCarouselDataSource , iCarouselDelegate{
         super.viewDidLoad()
         Carousel1.tag = 0
         Carousel1.type = .CoverFlow
+        Carousel1.delegate = self
+        Carousel1.dataSource = self
         
         
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func numberOfItemsInCarousel(carousel: iCarousel) -> Int {
-        if(carousel.tag==1){
-            return 7}
-        return 0
+        
+        return items2.count
+        
     }
     
     func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView {
@@ -47,15 +55,16 @@ iCarouselDataSource , iCarouselDelegate{
             //this `if (view == nil) {...}` statement because the view will be
             //recycled and used with other index values later
             itemView = UIImageView(frame:CGRect(x:0, y:0, width:95, height:95))
-            itemView.image = UIImage(named: "frequencia1.png")
+            
             itemView.contentMode = .Center
             
             label = UILabel(frame:itemView.bounds)
             label.backgroundColor = UIColor.clearColor()
             label.textAlignment = .Natural
-            label.font = label.font.fontWithSize(50)
+            label.font = label.font.fontWithSize(10)
             label.tag = 1
             itemView.addSubview(label)
+            
         }
         else
         {
@@ -63,7 +72,8 @@ iCarouselDataSource , iCarouselDelegate{
             itemView = view as! UIImageView;
             label = itemView.viewWithTag(1) as! UILabel!
         }
-        label.text = "\(items[index])"
+        itemView.image = UIImage(named: "\(items2[index])")
+        label.text = "\(items2[index])"
         return itemView
         
     }
