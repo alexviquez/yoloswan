@@ -16,7 +16,6 @@
 		2C791FD91BC947350085633D /* YoloswanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C791FD81BC947350085633D /* YoloswanUITests.swift */; };
 		2C997A291BCA018B004F04FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C997A281BCA018B004F04FA /* QuartzCore.framework */; };
 		5801105A1BC9914F00ECF194 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 580110591BC9914F00ECF194 /* iCarousel.m */; settings = {ASSET_TAGS = (); }; };
-		58D12ADE1BCAB6A900B76BE5 /* callingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D12ADD1BCAB6A900B76BE5 /* callingController.swift */; settings = {ASSET_TAGS = (); }; };
 		58E5AD9D1BCA438F00F332E3 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5AD9C1BCA438F00F332E3 /* MapController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		580110571BC9914E00ECF194 /* Yoloswan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yoloswan-Bridging-Header.h"; sourceTree = "<group>"; };
 		580110581BC9914F00ECF194 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		580110591BC9914F00ECF194 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		58D12ADD1BCAB6A900B76BE5 /* callingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = callingController.swift; sourceTree = "<group>"; };
 		58E5AD9C1BCA438F00F332E3 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapController.swift; path = Yoloswan/MapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +111,6 @@
 				2C791FB81BC947340085633D /* AppDelegate.swift */,
 				2C791FBA1BC947340085633D /* ViewController.swift */,
 				2C791FBC1BC947350085633D /* Main.storyboard */,
-				58D12ADD1BCAB6A900B76BE5 /* callingController.swift */,
 				2C791FBF1BC947350085633D /* Assets.xcassets */,
 				2C791FC11BC947350085633D /* LaunchScreen.storyboard */,
 				2C791FC41BC947350085633D /* Info.plist */,
@@ -276,7 +273,6 @@
 			files = (
 				58E5AD9D1BCA438F00F332E3 /* MapController.swift in Sources */,
 				5801105A1BC9914F00ECF194 /* iCarousel.m in Sources */,
-				58D12ADE1BCAB6A900B76BE5 /* callingController.swift in Sources */,
 				2C791FBB1BC947340085633D /* ViewController.swift in Sources */,
 				2C791FB91BC947340085633D /* AppDelegate.swift in Sources */,
 			);

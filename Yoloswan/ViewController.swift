@@ -11,12 +11,7 @@ import UIKit
 class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate {
     var AuxiliarInt: Int = 0
     var AuxIndex: Int = 0
-<<<<<<< HEAD
     var imageMap: String?
-=======
-    var StringPass: String = ""
-    var StringPassImage: String = ""
->>>>>>> origin/master
     
     @IBOutlet weak var Carousel2: iCarousel!
     @IBOutlet weak var Carousel1: iCarousel!
@@ -165,6 +160,7 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             //performSegueWithIdentifier("segueMap", sender: nil)
             AuxIndex = index
 
+        }
         if(carousel.tag == 2){
             //itemView.image = UIImage(named: "\(items5[index])")
             AuxiliarInt = 2
@@ -178,12 +174,14 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             AuxiliarInt = 3
             performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
+            print(imageMap)
+        }
         
         if(carousel.tag == 4){
             AuxiliarInt = 4
             performSegueWithIdentifier("segueMapSites", sender: nil)
             AuxIndex = index
-
+            imageMap = imagenes4[index] as! String
         }
         print(imageMap)
         var numero: String = telefonos1[index]
@@ -191,9 +189,10 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
         print("Se ha presionado un telefono")
         print(numero)
         var numerote: String = "tel://\(telefonos1[index])"
-        numerote = StringPass
+        
         UIApplication.sharedApplication().openURL(NSURL(string: numerote )!)
-
+        print(AuxiliarInt)
+        print(imageMap)
         
     }
     
@@ -213,7 +212,6 @@ class ViewController: UIViewController, iCarouselDataSource , iCarouselDelegate 
             nextview.intA = AuxiliarInt
             nextview.intIndex = AuxIndex
         }
-
         
     }
     

@@ -9,19 +9,12 @@
 import UIKit
 import MapKit
 
-<<<<<<< HEAD
 
-=======
-var intA: Int = 0
-var cadenita: String = ""
-var intIndex: Int = 0
->>>>>>> origin/master
 
 
 class MapController: UIViewController {
 
     
-    @IBOutlet weak var imageViewBottom: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var back: UIImageView!
     @IBOutlet weak var imageM: UIImageView!
@@ -47,23 +40,16 @@ class MapController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
         
         print(mapImage)
  
         self.imageM.image = UIImage(named: mapImage!)
         //imageM.image = UIImage(named:"\(mapImage)" )
         
-=======
-        imageViewBottom.image = UIImage(named: "\(cadenita)")
->>>>>>> origin/master
         self.back.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
 
-        
-        print(intIndex)
-        print("holoooooooooooopi")
-        print("holoooooooooooopi")
-        print("holoooooooooooopi")
+        print("hola")
+        print(intA)
         print(intIndex)
         
         switch intA{
