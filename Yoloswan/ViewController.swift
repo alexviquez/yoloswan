@@ -13,14 +13,15 @@ iCarouselDataSource , iCarouselDelegate{
    
     
     @IBOutlet weak var Carousel2: iCarousel!
-    
-    @IBOutlet weak var Carousel: UIView!
+    @IBOutlet weak var Carousel1: iCarousel!
+    @IBOutlet weak var Carousel3: iCarousel!
+    @IBOutlet weak var Carousel4: iCarousel!
     
     
     
     var items2: [String] = ["frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png","frecuente3.png"]
     var items3: [String] = ["Mamá","Papá"," Hijo","Sobrino","Primo"]
-    var items4: [String] = ["5515442244","5543322122","5599083838","5517172626","5503928391"]
+    var items4: [String] = ["5514938997","5543322122","5599083838","5517172626","5503928391"]
     
     var items: [Int] = []
     
@@ -39,11 +40,23 @@ iCarouselDataSource , iCarouselDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Carousel2.tag = 0
-        
+        Carousel2.tag = 1
+        Carousel1.tag = 2
+        Carousel3.tag = 3
+        Carousel4.tag = 4
         Carousel2.type = .CoverFlow
+        Carousel1.type = .CoverFlow
+        Carousel3.type = .CoverFlow
+        Carousel4.type = .CoverFlow
+        
+        Carousel1.dataSource = self
+        Carousel1.delegate = self
        Carousel2.dataSource = self
         Carousel2.delegate = self
+        Carousel3.dataSource = self
+        Carousel4.dataSource = self
+        Carousel3.delegate = self
+        Carousel4.delegate = self
         
         
         
